@@ -22,11 +22,6 @@ const Homepage = () => {
           Smart ICT Solutions for Modern Businesses
         </h1>
 
-        <p className="text-gray-200 text-base sm:text-lg mb-8">
-          Sentra Tech Limited delivers secure, scalable, and innovative technology services 
-          that help organizations grow, operate efficiently, and stay protected.
-        </p>
-
         <a
           href="#whoweare"
           className="bg-[#008000] text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg hover:bg-[#0000FF] transition"

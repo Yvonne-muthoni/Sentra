@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 
+
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
 
       {/* Contact Section */}
       <Contact />
+      
     </div>
   );
 }

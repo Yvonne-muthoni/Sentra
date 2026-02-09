@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 const whoWeAreData = [
+  
   {
     title: "ICT & Technology Solutions",
     description:
@@ -49,6 +50,17 @@ export default function WhoWeAre() {
         >
           Who We Are
         </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-black-200 text-base sm:text-lg mb-8 text-center max-w-3xl mx-auto"
+        >
+          Sentra Tech Limited delivers secure, scalable, and innovative technology services 
+          that help organizations grow, operate efficiently, and stay protected.
+        </motion.p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {whoWeAreData.map((item, index) => (
