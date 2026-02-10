@@ -58,8 +58,11 @@ export default function WhoWeAre() {
           viewport={{ once: true }}
           className="text-black-200 text-base sm:text-lg mb-8 text-center max-w-3xl mx-auto"
         >
-          Sentra Tech Limited delivers secure, scalable, and innovative technology services 
-          that help organizations grow, operate efficiently, and stay protected.
+          Sentra Tech is a technology solutions provider focused on delivering reliable, practical, and secure IT and smart technology services for homes and businesses.
+
+We specialize in helping clients plan, set up, and support technology systems that are easy to use, efficient, and aligned with real operational needs. Our approach is hands-on and solution-driven we focus on what works, not what is complicated.
+
+At Sentra Tech, we believe technology should simplify work and daily life, not create unnecessary complexity. That’s why we take time to understand each client’s environment before recommending or implementing any solution.
         </motion.p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -86,6 +89,98 @@ export default function WhoWeAre() {
               </p>
             </motion.div>
           ))}
+        </div>
+
+        {/* Our Approach & Why Choose Sentra Tech Sections */}
+        <div className="mt-20 grid md:grid-cols-2 gap-12">
+          {/* Our Approach */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="bg-linear-to-br from-green-50 to-white rounded-3xl p-10 shadow-lg border-l-4 border-[#008000]"
+          >
+            <h3 className="text-3xl font-bold text-[#008000] mb-8">Our Approach</h3>
+            <p className="text-gray-700 mb-8 leading-relaxed">
+              We work closely with our clients to deliver practical, scalable technology solutions.
+            </p>
+            
+            <div className="space-y-5">
+              {[
+                "Assess current technology needs",
+                "Design practical and scalable solutions",
+                "Implement systems professionally",
+                "Provide ongoing support and guidance",
+              ].map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.1, duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="flex items-start gap-4"
+                >
+                  <div className="shrink-0 w-8 h-8 bg-[#008000] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    {idx + 1}
+                  </div>
+                  <p className="text-gray-700 pt-1">{item}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-gray-700 mt-8 pt-8 border-t border-green-200 italic"
+            >
+              Our solutions are built with <span className="font-semibold text-[#008000]">reliability, security, and long-term usability</span> in mind.
+            </motion.p>
+          </motion.div>
+
+          {/* Why Choose Sentra Tech */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="bg-linear-to-br from-blue-50 to-white rounded-3xl p-10 shadow-lg border-l-4 border-blue-600"
+          >
+            <h3 className="text-3xl font-bold text-blue-600 mb-8">Why Choose Sentra Tech</h3>
+            
+            <div className="space-y-5">
+              {[
+                { icon: "fa-check-circle", text: "Practical, no-nonsense technology solutions" },
+                { icon: "fa-shield-alt", text: "Strong focus on reliability and support" },
+                { icon: "fa-comments", text: "Clear communication and honest advice" },
+                { icon: "fa-puzzle-piece", text: "Solutions tailored to your needs, not generic packages" },
+              ].map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.1, duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="flex items-start gap-4"
+                >
+                  <i className={`fas ${item.icon} text-xl text-blue-600 shrink-0 mt-1`}></i>
+                  <p className="text-gray-700">{item.text}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-gray-700 mt-8 pt-8 border-t border-blue-200 italic"
+            >
+              We are committed to building <span className="font-semibold text-blue-600">long-term partnerships</span> based on trust, performance, and value.
+            </motion.p>
+          </motion.div>
         </div>
 
       </div>

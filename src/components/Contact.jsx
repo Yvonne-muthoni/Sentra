@@ -117,11 +117,11 @@ export default function Contact() {
             </a>
 
             <a
-              href="mailto:info@sentratechltd.com"
+              href="mailto:sentratechlimited@gmail.com"
               className="flex items-center gap-3 hover:text-green-600"
             >
               <i className="fa-solid fa-envelope text-[#008000]"></i>
-              info@sentratechltd.com
+              sentratechlimited@gmail.com
             </a>
 
             <p className="flex items-center gap-3">
@@ -130,11 +130,11 @@ export default function Contact() {
             </p>
 
             <a
-              href="tel:+254714968992"
+              href="tel:+254798467717"
               className="flex items-center gap-3 hover:text-blue-600"
             >
               <i className="fa-solid fa-phone text-blue-500"></i>
-              +254 714 968 992
+              +254 798 467 717
             </a>
 
             <p className="flex items-center gap-3">
@@ -147,7 +147,7 @@ export default function Contact() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/254700000000"
+        href="https://wa.me/254798467717"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full shadow-2xl hover:scale-110 transition z-50 flex items-center justify-center overflow-visible"
