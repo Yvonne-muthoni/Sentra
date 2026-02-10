@@ -109,7 +109,7 @@ export default function Contact() {
 
           <div className="space-y-4 text-gray-700">
             <a
-              href="https://wa.me/254700000000"
+              href="https://wa.me/254798467717"
               className="flex items-center gap-3 hover:text-green-600"
             >
               <i className="fa-brands fa-whatsapp text-green-500 text-xl leading-none"></i>

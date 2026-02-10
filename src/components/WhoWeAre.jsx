@@ -58,10 +58,8 @@ export default function WhoWeAre() {
           viewport={{ once: true }}
           className="text-black-200 text-base sm:text-lg mb-8 text-center max-w-3xl mx-auto"
         >
-          Sentra Tech is a technology solutions provider focused on delivering reliable, practical, and secure IT and smart technology services for homes and businesses.
-
+  Sentra Tech is a technology solutions provider focused on delivering reliable, practical, and secure IT and smart technology services for homes and businesses.
 We specialize in helping clients plan, set up, and support technology systems that are easy to use, efficient, and aligned with real operational needs. Our approach is hands-on and solution-driven we focus on what works, not what is complicated.
-
 At Sentra Tech, we believe technology should simplify work and daily life, not create unnecessary complexity. That’s why we take time to understand each client’s environment before recommending or implementing any solution.
         </motion.p>
 
