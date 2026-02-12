@@ -48,7 +48,7 @@ export default function Services() {
 
   return (
     <section id="services" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-10xl mx-auto px-6 text-center">
 
         <h2 className="text-4xl font-bold text-[#008000] mb-4">
           Our Core Services

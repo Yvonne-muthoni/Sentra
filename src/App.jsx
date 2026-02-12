@@ -5,6 +5,7 @@ import WhoWeAre from "./components/WhoWeAre"; // remove if you merged into Homep
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -27,7 +28,9 @@ function App() {
 
       {/* Contact Section */}
       <Contact />
-      
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

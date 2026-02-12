@@ -18,12 +18,14 @@ const Homepage = () => {
         transition={{ duration: 1 }}
         className="relative z-10 max-w-3xl px-4"
       >
-        <h1 className="text-lg sm:text-3xl md:text-2xl font-bold text-white mb-6">Reliable ICT & Smart Technology solutions for modern Homes and Business</h1>
-        <p className="text-lg sm:text-xl md:text-lg text-white mb-8">We help homes, businesses and organizations design, implement, and support reliable It and smart Technology systems that work.</p>
+      <h1 className="whitespace-nowrap text-lg sm:text-3xl md:text-2xl font-bold text-white mb-6">
+  Reliable ICT & Smart Technology solutions for modern Homes and Business
+</h1>
+        <p className="whitespace-nowrap text-lg sm:text-xl md:text-lg text-white mb-8">We help homes, businesses and organizations design, implement, and support reliable It and smart Technology systems that work.</p>
 
         <a
           href="#whoweare"
-          className="bg-[#008000] text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg hover:bg-[#0000FF] transition"
+          className="bg-[#008000] text-white px-6 sm:px-8 py-4 rounded-full text-base sm:text-lg hover:bg-[#0000FF] transition,allign-center"
         >
           Get Started
         </a>
