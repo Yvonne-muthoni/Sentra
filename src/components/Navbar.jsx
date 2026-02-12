@@ -22,24 +22,18 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex space-x-8 font-medium">
+        <ul className="hidden md:flex space-x-8 font-bold">
           {navItems.map((item) => (
             <li key={item}>
               <a
                 href={`#${item.replace(/\s+/g, "").toLowerCase()}`}
-                className="text-[#FFA500] hover:text-white transition duration-300 text-lg md:text-xl"
+                className="text-[#FFA500] hover:text-white transition duration-300 text-lg md:text-xl font-bold"
               >
                 {item}
               </a>
             </li>
           ))}
         </ul>
-
-        {/* CTA */}
-        <a href="#contact" className="hidden md:inline-block bg-[#008000]/90 text-white px-6 py-2 rounded-full hover:bg-[#0000FF] transition duration-300 text-lg">
-          Get Started
-        </a>
-
         {/* Mobile Burger */}
         <div className="md:hidden">
           <button
@@ -57,12 +51,12 @@ const Navbar = () => {
           open ? "opacity-100 visible max-h-96" : "opacity-0 invisible max-h-0"
         }`}
       >
-        <ul className="flex flex-col items-center space-y-4 font-medium py-4">
+        <ul className="flex flex-col items-center space-y-4 font-bold py-4">
           {navItems.map((item) => (
             <li key={item}>
               <a
                 href={`#${item.replace(/\s+/g, "").toLowerCase()}`}
-                className="text-[#FFA500] hover:text-white transition duration-300 text-lg"
+                className="text-[#FFA500] hover:text-white transition duration-300 text-lg font-bold"
                 onClick={() => setOpen(false)}
               >
                 {item}
