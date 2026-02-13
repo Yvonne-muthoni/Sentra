@@ -13,7 +13,7 @@ const Footer = () => {
           viewport={{ once: true }}
         >
           <p className="text-[#FFA500]-400 text-sm md:text-base">
-            &copy; 2024 Sentra Tech. All rights reserved.
+            &copy; 2024 Sentra Cord. All rights reserved.
           </p>
           <p className="text-[#FFA500]-500 text-sm md:text-sm mt-2">
             Reliable ICT & Smart Technology Solutions

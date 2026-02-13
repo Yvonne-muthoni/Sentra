@@ -54,7 +54,7 @@ export default function Gallery() {
                 <img
                   src={img}
                   className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
-                  alt="Sentra Tech gallery"
+                  alt="Sentra Cord gallery"
                 />
               </div>
             ))}

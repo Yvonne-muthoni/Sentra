@@ -13,7 +13,7 @@ const whoWeAreData = [
   {
     title: "Reliable Technical Support",
     description:
-      "Our Online Team at Sentra Tech offers dependable technical support through proactive maintenance, remote assistance, and onsite services. We prioritize system uptime, fast issue resolution, and long-term reliability.",
+      "Our Online Team at Sentra Cord offers dependable technical support through proactive maintenance, remote assistance, and onsite services. We prioritize system uptime, fast issue resolution, and long-term reliability.",
     icon: "fa-headset",
     color: "text-green-600",
     border: "border-green-600",
@@ -58,7 +58,7 @@ export default function WhoWeAre() {
           viewport={{ once: true }}
           className="text-gray-700 text-base lg:text-lg mb-8 text-center max-w-3xl mx-auto"
         >
-          Sentra Tech is a technology solutions provider focused on delivering reliable, practical, and secure IT and smart technology services for homes and businesses.
+          Sentra Cord is a technology solutions provider focused on delivering reliable, practical, and secure IT and smart technology services for homes and businesses.
           <br />
           We specialize in helping clients plan, set up, and support technology systems that are easy to use, efficient, and aligned with real operational needs.
         </motion.p>
@@ -138,7 +138,7 @@ export default function WhoWeAre() {
             </motion.p>
           </motion.div>
 
-          {/* Why Choose Sentra Tech */}
+          {/* Why Choose Sentra Cord */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -146,7 +146,7 @@ export default function WhoWeAre() {
             viewport={{ once: true }}
             className="bg-linear-to-br from-blue-50 to-white rounded-3xl p-10 shadow-lg border-l-4 border-blue-600"
           >
-            <h3 className="text-3xl font-bold text-blue-600 mb-8">Why Choose Sentra Tech</h3>
+            <h3 className="text-3xl font-bold text-blue-600 mb-8">Why Choose Sentra Cord</h3>
             
             <div className="space-y-5">
               {[

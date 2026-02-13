@@ -55,7 +55,7 @@ export default function Services() {
         </h2>
 
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
-          Sentra Tech Limited offers comprehensive ICT and smart technology services that strengthen digital infrastructure, streamline operations, and enable sustainable organizational performance.
+          Sentra Cord Limited offers comprehensive ICT and smart technology services that strengthen digital infrastructure, streamline operations, and enable sustainable organizational performance.
         </p>
 
         {/* Services grid */}

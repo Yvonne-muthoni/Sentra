@@ -13,11 +13,11 @@ const Navbar = () => {
         <a href="#home" className="flex items-center gap-3">
           <img
             src={logo}
-            alt="Sentra Tech Logo"
+            alt="Sentra Cord Logo"
             className="h-10 md:h-12 w-auto object-contain mix-blend-lighten"
           />
           <span className="text-3xl md:text-4xl font-bold tracking-wide text-[#FFA500]">
-            SentraTech
+            Sentra Cord
           </span>
         </a>
 
