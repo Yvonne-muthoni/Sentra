@@ -58,9 +58,8 @@ export default function WhoWeAre() {
           viewport={{ once: true }}
           className="text-gray-700 text-base lg:text-lg mb-8 text-center max-w-3xl mx-auto"
         >
-          Sentra Cord is a technology solutions provider focused on delivering reliable, practical, and secure IT and smart technology services for homes and businesses.
-          <br />
-          We specialize in helping clients plan, set up, and support technology systems that are easy to use, efficient, and aligned with real operational needs.
+          Sentra Cord is a technology solutions provider delivering reliable, practical, and secure ICT and smart technology services for businesses, organizations, and homes.
+We design, implement, and support systems that strengthen connectivity, improve operational efficiency, and enhance security. Our solutions are built around real-world needs — simple to use, scalable, and aligned with long-term objectives.
         </motion.p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
