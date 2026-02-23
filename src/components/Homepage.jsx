@@ -10,9 +10,9 @@ const Homepage = () => {
     {
       image: slide1,
       title:
-        "Reliable ICT & Smart Technology solutions for modern Homes and Business",
+        "Reliable ICT & Smart Technology Solutions for modern Homes and Business",
       subtitle:
-        "We help homes, businesses and organizations design, implement, and support reliable IT and smart technology systems that work.",
+        "We help companies install, secure, and support networks, CCTV, and smart systems — with dependable service and transparent pricing.",
     },
     {
       image: slide2,
