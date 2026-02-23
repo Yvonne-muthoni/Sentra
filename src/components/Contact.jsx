@@ -121,7 +121,7 @@ export default function Contact() {
               className="flex items-center gap-3 hover:text-green-600"
             >
               <i className="fa-solid fa-envelope text-[#008000]"></i>
-              sentratechlimited@gmail.com
+              info@sentracord.co.ke
             </a>
 
             <p className="flex items-center gap-3">
