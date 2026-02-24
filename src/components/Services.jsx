@@ -7,33 +7,74 @@ import img3 from "../assets/images/img/new-3.jpg";
 import img4 from "../assets/images/img/new-4.jpg";
 import img5 from "../assets/images/img/new-5.jpg";
 const services = [
-  { 
+  {
     image: img1,
-    title: "ICT Infrastructure",
-    desc: "Development and implementation of business systems, workflow automation and web-based platforms that streamline operations and improve decision-making. Our solutions are scalable, secure, and aligned with organizational processes." 
+    title: "Network Infrastructure & Connectivity",
+    shortDesc:
+      "We design and implement secure, high-performance wired and wireless networks.",
+    includes: [
+      "LAN & structured cabling",
+      "Wi-Fi deployment & optimization",
+      "Router, firewall & switch configuration",
+      "Network performance assessment",
+      "Secure internet access setup",
+    ],
+    outcome: "Stable connectivity, reduced downtime, improved productivity.",
   },
-  { 
+  {
     image: img2,
-    title: "Software Solutions and Automation",
-    desc: "Development and implementation of business systems, workflow automation and web-based platforms that streamline operations and improve decision-making. Our solutions are scalable, secure, and aligned with organizational processes." 
+    title: "IT Support & Systems Management",
+    shortDesc:
+      "Structured technical support to keep systems running efficiently and reliably.",
+    includes: [
+      "Troubleshooting & fault resolution",
+      "Software installation & configuration",
+      "Email & user account setup",
+      "Remote and on-site support",
+      "Preventive maintenance",
+    ],
+    outcome: "Minimal disruptions and dependable system performance.",
   },
-  { 
-    image: img3, 
-    title: "Cloud Computing & Collaboration", 
-    desc: "Setup, migration and management of cloud services including Microsoft 365, Google Workspace, cloud storage and secure collaboration platforms. We support flexible work environments and data accessibility." 
+  {
+    image: img3,
+    title: "Smart Technology & Security Systems",
+    shortDesc:
+      "Intelligent systems that enhance security, control, and visibility.",
+    includes: [
+      "CCTV installation & configuration",
+      "Access control systems",
+      "Smart home & office automation",
+      "Surveillance system integration",
+      "User training & handover",
+    ],
+    outcome: "Enhanced security, monitoring, and operational control.",
   },
-  { 
-    image: img4, 
-    title: "Smart Security & IoT Solutions", 
-    desc: "Deployment of smart security systems such as IP CCTV, access control, GPS tracking, alarm systems and IoT-enabled solutions for homes and businesses. Our focus is on visibility, control and risk reduction." 
+  {
+    image: img4,
+    title: "ICT Consulting & Advisory",
+    shortDesc: "Guidance to align technology decisions with operational goals.",
+    includes: [
+      "ICT needs assessment",
+      "Infrastructure planning",
+      "Technology upgrade strategies",
+      "Cost-effective solution recommendations",
+    ],
+    outcome: "Practical, scalable technology investments.",
   },
-  { 
-    image: img5, 
-    title: "IT Support, Maintenance & Consultancy", 
-    desc: "Ongoing ICT support through preventive maintenance, troubleshooting, cybersecurity advisory and digital transformation consultancy. We ensure system stability and long-term technology sustainability." 
+  {
+    image: img5,
+    title: "Systems Installation & Integration",
+    shortDesc:
+      "Professional deployment and integration of hardware and software systems.",
+    includes: [
+      "Hardware installation",
+      "System configuration",
+      "Testing & commissioning",
+      "Documentation & handover",
+    ],
+    outcome: "Properly implemented systems that work from day one.",
   },
 ];
-
 const PER_PAGE = 3;
 
 export default function Services() {
@@ -48,9 +89,9 @@ export default function Services() {
 
   return (
     <section id="services" className="py-16 bg-white">
-      <div className="max-w-10xl mx-auto px-6 text-center">
+      <div className="max-w-10xl mx-auto px-6 text-align-center">
 
-        <h2 className="text-4xl font-bold text-[#008000] mb-4">
+        <h2 className="text-4xl font-bold text-[#008000] mb-4 text-center">
           Our Core Services
         </h2>
 
@@ -82,13 +123,22 @@ export default function Services() {
                   />
                 </div>
 
-                <h3 className="text-lg font-semibold mb-2">
-                  {service.title}
-                </h3>
+                <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
 
-                <p className="text-gray-600 text-sm">
-                  {service.desc}
-                </p>
+                <p className="text-gray-600 text-sm mb-2">{service.shortDesc}</p>
+
+                <div className="text-left">
+                  <p className="font-semibold text-sm mb-1">Includes:</p>
+                  <ul className="list-disc list-inside text-sm text-gray-600">
+                    {service.includes.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+
+                  <p className="mt-2 text-sm text-gray-700">
+                    <span className="font-semibold">Outcome:</span> {service.outcome}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </motion.div>
