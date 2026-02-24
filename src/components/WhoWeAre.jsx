@@ -5,7 +5,7 @@ const whoWeAreData = [
   {
     title: "ICT & Technology Solutions",
     description:
-      "We provide end-to-end ICT solutions including infrastructure design, networking, software systems, and cloud services. Our approach ensures technology aligns with operational goals and business continuity requirements.",
+      "We provide end-to-end ICT services including infrastructure design, network deployment, software systems integration, and cloud-based solutions. Our focus is ensuring technology supports productivity, continuity, and growth not complexity.",
     icon: "fa-network-wired",
     color: "text-blue-600",
     border: "border-blue-600",
@@ -21,7 +21,7 @@ const whoWeAreData = [
   {
     title: "Security & Risk Management",
     description:
-      "We implement secure ICT environments through network security, access controls, surveillance systems, and data protection solutions — reducing risk and enhancing resilience.",
+      "We help organizations establish secure ICT environments through network protection, access control systems, surveillance solutions, and data security measures. Our goal is to reduce operational risk and strengthen resilience against emerging threats.",
     icon: "fa-shield-halved",
     color: "text-orange-500",
     border: "border-orange-500",
@@ -29,7 +29,7 @@ const whoWeAreData = [
   {
     title: "Business & Community Impact",
     description:
-      "Beyond technology, we support organizations and communities through digital transformation and practical capacity building.",
+      "Beyond system implementation, we support businesses and communities in adopting practical digital solutions that enhance efficiency and long-term capability. ",
     icon: "fa-chart-line",
     color: "text-blue-500",
     border: "border-blue-500",
@@ -58,9 +58,8 @@ export default function WhoWeAre() {
           viewport={{ once: true }}
           className="text-gray-700 text-base lg:text-lg mb-8 text-center max-w-3xl mx-auto"
         >
-          Sentra Cord is a technology solutions provider focused on delivering reliable, practical, and secure IT and smart technology services for homes and businesses.
-          <br />
-          We specialize in helping clients plan, set up, and support technology systems that are easy to use, efficient, and aligned with real operational needs.
+          Sentra Cord is a technology solutions provider delivering reliable, practical, and secure ICT and smart technology services for businesses, organizations, and homes.
+We design, implement, and support systems that strengthen connectivity, improve operational efficiency, and enhance security. Our solutions are built around real-world needs simple to use, scalable, and aligned with long-term objectives.
         </motion.p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
