@@ -50,25 +50,32 @@ export default function Contact() {
       {/* Floating "Let's Chat" Button */}
       <div className="fixed bottom-8 right-8 z-50 flex flex-col items-center">
         {/* Social icons popout */}
-        <AnimatePresence>
-          {chatOpen &&
-            socialLinks.map((link, index) => (
-              <motion.a
-                key={link.name}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                transition={{ delay: index * 0.05 }}
-                className={`w-12 h-12 mb-3 rounded-full flex items-center justify-center shadow-lg ${link.bg} hover:scale-110 transform transition`}
-                title={link.name}
-              >
-                <i className={`${link.icon} text-xl`}></i>
-              </motion.a>
-            ))}
-        </AnimatePresence>
+       <AnimatePresence>
+  {chatOpen &&
+    socialLinks.map((link, index) => (
+      <motion.a
+        key={link.name}
+        href={link.href}
+
+        // ✅ Only open new tab for non-phone links
+        target={link.name === "Phone" ? undefined : "_blank"}
+        rel={link.name === "Phone" ? undefined : "noopener noreferrer"}
+
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 20 }}
+        transition={{ delay: index * 0.05 }}
+        className={`w-12 h-12 mb-3 rounded-full flex items-center justify-center shadow-lg ${link.bg} hover:scale-110 transform transition`}
+        title={
+          link.name === "Phone"
+            ? "Call Sentra Cord"
+            : `Chat on ${link.name}`
+        }
+      >
+        <i className={`${link.icon} text-xl`}></i>
+      </motion.a>
+    ))}
+</AnimatePresence>
 
         {/* Main Chat Button */}
         <button
