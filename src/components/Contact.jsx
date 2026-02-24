@@ -138,7 +138,7 @@ export default function Contact() {
               className="flex items-center gap-3 hover:text-green-600"
             >
               <i className="fa-solid fa-envelope text-[#008000]"></i>
-              sentratechlimited@gmail.com
+              info@sentracord.co.ke
             </a>
 
             {/* WEBSITE GLOBE ICON ADDED HERE */}
@@ -149,7 +149,7 @@ export default function Contact() {
               className="flex items-center gap-3 hover:text-blue-600"
             >
               <i className="fa-solid fa-globe text-blue-500"></i>
-              Sentra Cord
+              www.sentracord.co.ke
             </a>
 
             {/* Location */}
