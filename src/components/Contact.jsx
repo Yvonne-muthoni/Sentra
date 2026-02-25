@@ -203,10 +203,30 @@ export default function Contact() {
               </p>
 
             </div>
+         </div>
+        {/* Website */}
+<a
+  href="https://sentracord.co.ke"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-4 p-4 bg-white rounded-xl shadow hover:shadow-lg transition"
+>
 
-          </div>
+  <i className="fa-solid fa-globe text-blue-500 text-xl"></i>
 
+  <div>
 
+    <p className="font-medium">
+      Website
+    </p>
+
+    <p className="text-gray-500 text-sm">
+      www.sentracord.co.ke
+    </p>
+
+  </div>
+
+</a>
         </motion.div>
 
 
@@ -219,16 +239,18 @@ export default function Contact() {
 
       <>
 
-            <motion.a
-          href="https://whatsapp.com"
-          target="_blank"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          className="w-12 h-12mb-3 flex items-center justify-center shadow-lg"
-        >
-          <i className="fa-brands fa-whatsapptext-white"></i>
-        </motion.a>
+          <motion.a
+  href="https://wa.me/254798467717"  // WhatsApp direct chat link
+  target="_blank"
+  rel="noopener noreferrer"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  exit={{ opacity: 0, y: 20 }}
+  className="w-12 h-12 mb-3 flex items-center justify-center shadow-lg bg-green-500 rounded-full"
+  title="WhatsApp"
+>
+  <i className="fa-brands fa-whatsapp text-white text-xl"></i>
+</motion.a>
 
         <motion.a
           href="https://linkedin.com"

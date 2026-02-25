@@ -13,27 +13,44 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          {/* ✅ ADDED: Contact Info */}
-          <div className="mt-4 space-y-1">
-<a
+
+          {/* Contact Info (UNCHANGED) */}
+          <div className="mt-4 flex justify-center items-center gap-2 flex-wrap">
+
+            <a
               href="mailto:info@sentracord.co.ke"
-              className="block hover:text-green-600 transition"
+              className="hover:text-green-600 transition flex items-center"
             >
-              <i className="fa-solid fa-envelope mr-2"></i>
+              <i className="fa-solid fa-envelope mr-1"></i>
               info@sentracord.co.ke
             </a>
+
+            <span>|</span>
+
             <a
               href="tel:+254798467717"
-              className="block hover:text-green-600 transition"
+              className="hover:text-green-600 transition flex items-center"
             >
-              <i className="fa-solid fa-phone mr-2"></i>
+              <i className="fa-solid fa-phone mr-1"></i>
               +254 798 467 717
             </a>
+
           </div>
 
 
-          {/* ✅ ADDED: Social Icons */}
+          {/* ✅ Social Icons (WhatsApp added FIRST) */}
           <div className="flex justify-center gap-4 mt-4">
+
+            {/* ✅ WhatsApp FIRST */}
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              href="https://wa.me/254798467717"
+              target="_blank"
+              className="text-green-500 text-xl"
+            >
+              <i className="fa-brands fa-whatsapp"></i>
+            </motion.a>
+
 
             <motion.a
               whileHover={{ scale: 1.2 }}
@@ -85,7 +102,9 @@ const Footer = () => {
             </motion.a>
 
           </div>
-           {/* Existing text (unchanged) */}
+
+
+          {/* Existing text (unchanged) */}
           <p className="text-[#FFA500]-400 text-sm md:text-base">
             &copy; 2024 Sentra Cord. All rights reserved.
           </p>
