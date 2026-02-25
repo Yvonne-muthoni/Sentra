@@ -161,33 +161,7 @@ export default function Contact() {
             </div>
 
           </a>
-
-
-
-          {/* WhatsApp */}
-          <a
-            href="https://wa.me/254798467717"
-            target="_blank"
-            className="flex items-center gap-4 p-4 bg-white rounded-xl shadow hover:shadow-lg transition"
-          >
-
-            <i className="fa-brands fa-whatsapp text-green-500 text-xl"></i>
-
-            <div>
-
-              <p className="font-medium">
-                WhatsApp
-              </p>
-
-              <p className="text-gray-500 text-sm">
-                Chat with us
-              </p>
-
-            </div>
-
-          </a>
-
-
+   
 
           {/* Email */}
           <a
@@ -244,6 +218,17 @@ export default function Contact() {
     {chatOpen && (
 
       <>
+
+            <motion.a
+          href="https://whatsapp.com"
+          target="_blank"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          className="w-12 h-12mb-3 flex items-center justify-center shadow-lg"
+        >
+          <i className="fa-brands fa-whatsapptext-white"></i>
+        </motion.a>
 
         <motion.a
           href="https://linkedin.com"
