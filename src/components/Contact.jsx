@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 export default function Contact() {
@@ -7,6 +7,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
+  const [chatOpen, setChatOpen] = useState(false);
 
   return (
     <section
