@@ -13,20 +13,15 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-
-          {/* Existing text (unchanged) */}
-          <p className="text-[#FFA500]-400 text-sm md:text-base">
-            &copy; 2024 Sentra Cord. All rights reserved.
-          </p>
-
-          <p className="text-[#FFA500]-500 text-sm md:text-sm mt-2">
-            Reliable ICT & Smart Technology Solutions
-          </p>
-
-
           {/* ✅ ADDED: Contact Info */}
           <div className="mt-4 space-y-1">
-
+<a
+              href="mailto:info@sentracord.co.ke"
+              className="block hover:text-green-600 transition"
+            >
+              <i className="fa-solid fa-envelope mr-2"></i>
+              info@sentracord.co.ke
+            </a>
             <a
               href="tel:+254798467717"
               className="block hover:text-green-600 transition"
@@ -34,16 +29,6 @@ const Footer = () => {
               <i className="fa-solid fa-phone mr-2"></i>
               +254 798 467 717
             </a>
-
-
-            <a
-              href="mailto:info@sentracord.co.ke"
-              className="block hover:text-green-600 transition"
-            >
-              <i className="fa-solid fa-envelope mr-2"></i>
-              info@sentracord.co.ke
-            </a>
-
           </div>
 
 
@@ -100,7 +85,14 @@ const Footer = () => {
             </motion.a>
 
           </div>
+           {/* Existing text (unchanged) */}
+          <p className="text-[#FFA500]-400 text-sm md:text-base">
+            &copy; 2024 Sentra Cord. All rights reserved.
+          </p>
 
+          <p className="text-[#FFA500]-500 text-sm md:text-sm mt-2">
+            Reliable ICT & Smart Technology Solutions
+          </p>
 
         </motion.div>
 

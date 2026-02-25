@@ -236,7 +236,89 @@ export default function Contact() {
 
 
       </div>
+<div className="fixed bottom-8 right-8 z-50 flex flex-col items-center">
 
+  <AnimatePresence>
+
+    {chatOpen && (
+
+      <>
+
+        <motion.a
+          href="https://linkedin.com"
+          target="_blank"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          className="w-12 h-12 mb-3 rounded-full bg-blue-700 flex items-center justify-center shadow-lg"
+        >
+          <i className="fa-brands fa-linkedin-in text-white"></i>
+        </motion.a>
+
+
+        <motion.a
+          href="https://twitter.com"
+          target="_blank"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          className="w-12 h-12 mb-3 rounded-full bg-black flex items-center justify-center shadow-lg"
+        >
+          <i className="fa-brands fa-x-twitter text-white"></i>
+        </motion.a>
+
+
+        <motion.a
+          href="https://facebook.com"
+          target="_blank"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          className="w-12 h-12 mb-3 rounded-full bg-blue-600 flex items-center justify-center shadow-lg"
+        >
+          <i className="fa-brands fa-facebook-f text-white"></i>
+        </motion.a>
+
+
+        <motion.a
+          href="https://tiktok.com"
+          target="_blank"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          className="w-12 h-12 mb-3 rounded-full bg-black flex items-center justify-center shadow-lg"
+        >
+          <i className="fa-brands fa-tiktok text-white"></i>
+        </motion.a>
+
+
+        <motion.a
+          href="https://instagram.com"
+          target="_blank"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          className="w-12 h-12 mb-3 rounded-full bg-pink-600 flex items-center justify-center shadow-lg"
+        >
+          <i className="fa-brands fa-instagram text-white"></i>
+        </motion.a>
+
+      </>
+
+    )}
+
+  </AnimatePresence>
+  {/* MAIN BUTTON */}
+  <button
+    onClick={() => setChatOpen(!chatOpen)}
+    className="w-16 h-16 bg-[#008000] rounded-full flex items-center justify-center text-white shadow-xl hover:scale-110 transition"
+  >
+
+    <i className="fa-solid fa-comments text-xl"></i>
+
+  </button>
+
+</div>
 
     </section>
   );
