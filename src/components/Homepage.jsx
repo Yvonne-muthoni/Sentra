@@ -1,86 +1,85 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
-
-import slide1 from "../assets/images/Gallery5.jpg";
-import slide2 from "../assets/images/Gallery4.png";
-import slide3 from "../assets/images/Gallery3.jpg";
+import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+import slide1 from "/images/Gallery5.jpg";
 
 const Homepage = () => {
-  const slides = [
-    {
-      image: slide1,
-      title:
-        "Reliable ICT & Smart Technology Solutions for modern Homes and Business",
-      subtitle:
-        "We help companies install, secure, and support networks, CCTV, and smart systems — with dependable service and transparent pricing.",
-    },
-    {
-      image: slide2,
-      title: "Empowering Digital Transformation",
-      subtitle:
-        "Secure networks, smart automation and scalable technology solutions.",
-    },
-    {
-      image: slide3,
-      title: "Innovative Solutions for a Smarter Future",
-      subtitle:
-        "Professional ICT services tailored for modern environments.",
-    },
-  ];
-
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section
       id="home"
-      className="h-screen flex items-center justify-center text-center relative overflow-hidden"
+      className="relative h-screen flex items-center justify-center text-center overflow-hidden"
     >
-      {/* Background Images with Smooth Fade */}
-      <AnimatePresence>
-        <motion.div
-          key={current}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2 }}
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${slides[current].image})` }}
-        />
-      </AnimatePresence>
+      {/* Background Image (FIXED) */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: `url(${slide1})` }}
+      />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60 z-10"></div>
 
       {/* Content */}
       <motion.div
-        key={`text-${current}`}
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative z-10 max-w-3xl px-4"
+        transition={{ duration: 1 }}
+        className="relative z-20 max-w-3xl px-6"
       >
-        <h1 className="text-lg sm:text-3xl md:text-2xl font-bold text-white mb-6">
-          {slides[current].title}
-        </h1>
+        {/* Top Heading */}
+       <h1 className="text-gray-300 text-2xl md:text-3xl font-extrabold text-center w-full mb-6 -ml-30 whitespace-normal md:whitespace-nowrap">
+       Sentra Cord Delivers Smart ICT and Technology Solutions Including
+       </h1>
 
-        <p className="text-lg sm:text-xl md:text-lg text-white mb-8">
-          {slides[current].subtitle}
-        </p>
+        {/* Typing Effect */}
+        <h2 className="text-yellow-500 text-2xl sm:text-4xl md:text-5xl font-bold mb-6">
+          <TypeAnimation
+            sequence={[
+              "Network Infrastructure",
+              2000,
+              "CCTV Security Systems",
+              2000,
+              "IT Support Services",
+              2000,
+              "Web Development",
+              2000,
+              "Automation Services",
+              2000,
+            ]}
+            speed={50}
+            repeat={Infinity}
+          />
+        </h2>
 
-        <a
-          href="#whoweare"
-          className="bg-[#008000] text-white px-6 sm:px-8 py-4 rounded-full text-base sm:text-lg hover:bg-[#0000FF] transition"
+        {/* Bottom Heading */}
+        <h3 className="text-gray-300 mt-4 tracking-wide text-xl md:text-2xl font-semibold text-center whitespace-normal md:whitespace-nowrap">
+          for Businesses and Homes Across Nairobi and Kenya.
+        </h3>
+
+        {/* Description */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+          className="text-base sm:text-lg text-gray-200 mt-6 mb-8 leading-relaxed"
         >
-          Get Started
-        </a>
+          We are committed to delivering practical, high-quality technology solutions that our clients can trust.
+        </motion.p>
+
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#whoweare"
+            className="bg-green-500 text-white px-6 py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-600 transition duration-300 shadow-lg"
+          >
+            Get Started
+          </a>
+
+          <a
+            href="#contact"
+            className="border border-white text-white px-6 py-3 rounded-full text-base sm:text-lg hover:bg-white hover:text-black transition duration-300"
+          >
+            Reach us
+          </a>
+        </div>
       </motion.div>
     </section>
   );

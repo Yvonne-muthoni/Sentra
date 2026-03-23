@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import img1 from "../assets/images/img/new-1.jpg";
-import img2 from "../assets/images/img/new-2.jpg";
-import img3 from "../assets/images/img/new-3.jpg";
-import img4 from "../assets/images/img/new-4.jpg";
-import img5 from "../assets/images/img/new-5.jpg";
+import img1 from "/images/img/new-1.jpg";
+import img2 from "/images/img/new-2.jpg";
+import img3 from "/images/img/new-3.jpg";
+import img4 from "/images/img/new-4.jpg";
+import img5 from "/images/img/new-5.jpg";
 const services = [
   {
     image: img1,
@@ -91,7 +91,7 @@ export default function Services() {
     <section id="services" className="py-16 bg-white">
       <div className="max-w-10xl mx-auto px-6 text-align-center">
 
-        <h2 className="text-4xl font-bold text-[#008000] mb-4 text-center">
+        <h2 className="text-4xl font-bold text-[#008000] mt-6 text-center">
           Our Core Services
         </h2>
 

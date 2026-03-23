@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
-import WhoWeAre from "./components/WhoWeAre"; // remove if you merged into Homepage
+import AboutUs from "./components/AboutUs"; // remove if you merged into Homepage
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Homepage />
 
       {/* Who We Are Section */}
-      <WhoWeAre /> 
+      <AboutUs /> 
 
       {/* Services Section */}
       <Services />
@@ -31,6 +32,7 @@ function App() {
 
       {/* Footer */}
       <Footer />
+     
     </div>
   );
 }

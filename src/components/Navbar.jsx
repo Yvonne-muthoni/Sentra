@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "/images/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const navItems = ["Home", "Who We Are", "Our Services", "Gallery", "Contact"];
+  const navItems = ["Home", "About Us", "Services", "Gallery", "Contact"];
 
   return (
     <nav className="fixed top-2 left-0 w-full z-50 bg-transparent backdrop-blur-md">
