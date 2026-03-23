@@ -6,6 +6,9 @@ import img2 from "/images/img/new-2.jpg";
 import img3 from "/images/img/new-3.jpg";
 import img4 from "/images/img/new-4.jpg";
 import img5 from "/images/img/new-5.jpg";
+
+const PER_PAGE = 3;
+
 const services = [
   {
     image: img1,
@@ -52,7 +55,8 @@ const services = [
   {
     image: img4,
     title: "ICT Consulting & Advisory",
-    shortDesc: "Guidance to align technology decisions with operational goals.",
+    shortDesc:
+      "Guidance to align technology decisions with operational goals.",
     includes: [
       "ICT needs assessment",
       "Infrastructure planning",
@@ -75,7 +79,6 @@ const services = [
     outcome: "Properly implemented systems that work from day one.",
   },
 ];
-const PER_PAGE = 3;
 
 export default function Services() {
   const [page, setPage] = useState(0);
@@ -89,17 +92,19 @@ export default function Services() {
 
   return (
     <section id="services" className="py-16 bg-white">
-      <div className="max-w-10xl mx-auto px-6 text-align-center">
+      <div className="max-w-10xl mx-auto px-6 text-center">
 
-        <h2 className="text-4xl font-bold text-[#008000] mt-6 text-center">
+        <h2 className="text-4xl font-bold text-[#008000] mt-6">
           Our Core Services
         </h2>
 
-        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
-          Sentra Cord Limited offers comprehensive ICT and smart technology services that strengthen digital infrastructure, streamline operations, and enable sustainable organizational performance.
+        <p className="text-gray-600 max-w-3xl mx-auto mb-14">
+          Sentra Cord Limited offers comprehensive ICT and smart technology services
+          that strengthen digital infrastructure, streamline operations, and enable
+          sustainable organizational performance.
         </p>
 
-        {/* Services grid */}
+        {/* SERVICES GRID */}
         <AnimatePresence mode="wait">
           <motion.div
             key={page}
@@ -115,17 +120,21 @@ export default function Services() {
                 whileHover={{ scale: 1.05 }}
                 className="bg-gray-50 rounded-3xl p-8 shadow-lg"
               >
-                <div className="mx-auto mb-6 w-48 h-36 p-1 rounded-[50%] bg-line from-[#008000] via-[#FFA500] to-[#0000FF]">
+                <div className="mx-auto mb-6 w-48 h-36 p-1 rounded-full bg-linear-to-r from-[#008000] via-[#FFA500] to-[#0000FF]">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full rounded-[50%] object-cover bg-white"
+                    className="w-full h-full rounded-full object-cover bg-white"
                   />
                 </div>
 
-                <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+                <h3 className="text-lg font-semibold mb-2">
+                  {service.title}
+                </h3>
 
-                <p className="text-gray-600 text-sm mb-2">{service.shortDesc}</p>
+                <p className="text-gray-600 text-sm mb-2">
+                  {service.shortDesc}
+                </p>
 
                 <div className="text-left">
                   <p className="font-semibold text-sm mb-1">Includes:</p>
@@ -136,7 +145,8 @@ export default function Services() {
                   </ul>
 
                   <p className="mt-2 text-sm text-gray-700">
-                    <span className="font-semibold">Outcome:</span> {service.outcome}
+                    <span className="font-semibold">Outcome:</span>{" "}
+                    {service.outcome}
                   </p>
                 </div>
               </motion.div>
@@ -144,7 +154,54 @@ export default function Services() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Navigation dots */}
+        {/* APPROACH & WHY CHOOSE */}
+        <div className="mt-24">
+          <h2 className="text-3xl font-bold text-center mb-10">
+            How We Work
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-12">
+
+            <motion.div className="bg-linear-to-br from-green-50 to-white rounded-3xl p-10 shadow-lg border-l-4 border-green-600">
+              <h3 className="text-2xl font-bold text-green-600 mb-6">
+                Our Approach
+              </h3>
+
+              <div className="space-y-4">
+                {["Assess needs", "Design solutions", "Implement systems", "Provide support"].map(
+                  (item, idx) => (
+                    <div key={idx} className="flex items-center gap-3">
+                      <div className="w-7 h-7 bg-green-600 text-white rounded-full flex items-center justify-center text-sm">
+                        {idx + 1}
+                      </div>
+                      <p>{item}</p>
+                    </div>
+                  )
+                )}
+              </div>
+            </motion.div>
+
+            <motion.div className="bg-linear-to-br from-blue-50 to-white rounded-3xl p-10 shadow-lg border-l-4 border-blue-600">
+              <h3 className="text-2xl font-bold text-blue-600 mb-6">
+                Why Choose Us
+              </h3>
+
+              <div className="space-y-4">
+                {["Reliable solutions", "Strong support", "Clear communication", "Tailored services"].map(
+                  (item, idx) => (
+                    <div key={idx} className="flex items-center gap-3">
+                      <i className="fas fa-check-circle text-blue-600"></i>
+                      <p>{item}</p>
+                    </div>
+                  )
+                )}
+              </div>
+            </motion.div>
+
+          </div>
+        </div>
+
+        {/* NAVIGATION DOTS */}
         <div className="flex justify-center mt-12 space-x-3">
           {[...Array(totalPages)].map((_, i) => (
             <button

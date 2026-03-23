@@ -48,9 +48,7 @@ export default function AboutUs() {
           Sentra Cord delivers reliable, practical, and secure ICT and smart technology services.
         </motion.p>
 
-        {/* ========================= */}
-        {/* TOP SECTION (BULLETS + IMAGE) */}
-        {/* ========================= */}
+        {/* TOP SECTION */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           {/* LEFT */}
@@ -95,12 +93,19 @@ export default function AboutUs() {
               </p>
             </div>
           </motion.div>
-
         </div>
 
-        {/* ========================= */}
+        {/* 🔥 OUR SERVICES BUTTON */}
+        <div className="mt-16 text-center">
+          <a
+            href="#services"
+            className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-full shadow-lg transition duration-300"
+          >
+            Our Services
+          </a>
+        </div>
+
         {/* MISSION & VISION */}
-        {/* ========================= */}
         <div className="mt-20">
           <h2 className="text-3xl font-bold text-center mb-10">
             Our Purpose
@@ -130,64 +135,28 @@ export default function AboutUs() {
             </motion.div>
 
           </div>
-        </div>
 
-        {/* ========================= */}
-        {/* APPROACH & WHY CHOOSE */}
-        {/* ========================= */}
-        <div className="mt-24">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            How We Work
-          </h2>
+          {/* 🔥 BUTTONS UNDER MISSION & VISION */}
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
 
-          <div className="grid md:grid-cols-2 gap-12">
+            <a
+              href="#contact"
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full shadow-md transition"
+            >
+              Contact Us
+            </a>
 
-            {/* APPROACH */}
-            <motion.div className="bg-linear-to-br from-green-50 to-white rounded-3xl p-10 shadow-lg border-l-4 border-green-600">
-              <h3 className="text-2xl font-bold text-green-600 mb-6">
-                Our Approach
-              </h3>
-
-              <div className="space-y-4">
-                {[
-                  "Assess needs",
-                  "Design solutions",
-                  "Implement systems",
-                  "Provide support",
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3">
-                    <div className="w-7 h-7 bg-green-600 text-white rounded-full flex items-center justify-center text-sm">
-                      {idx + 1}
-                    </div>
-                    <p>{item}</p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* WHY CHOOSE */}
-            <motion.div className="bg-linear-to-br from-blue-50 to-white rounded-3xl p-10 shadow-lg border-l-4 border-blue-600">
-              <h3 className="text-2xl font-bold text-blue-600 mb-6">
-                Why Choose Us
-              </h3>
-
-              <div className="space-y-4">
-                {[
-                  "Reliable solutions",
-                  "Strong support",
-                  "Clear communication",
-                  "Tailored services",
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3">
-                    <i className="fas fa-check-circle text-blue-600"></i>
-                    <p>{item}</p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
+            <a
+              href="#projects"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full shadow-md transition"
+            >
+              Our Projects
+            </a>
 
           </div>
         </div>
+
+  
 
       </div>
     </section>

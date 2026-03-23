@@ -3,7 +3,7 @@ import logo from "/images/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const navItems = ["Home", "About Us", "Services", "Gallery", "Contact"];
+  const navItems = ["Home", "About Us", "Services", "Projects", "Contact"];
 
   return (
     <nav className="fixed top-2 left-0 w-full z-50 bg-transparent backdrop-blur-md">

@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
 import AboutUs from "./components/AboutUs"; // remove if you merged into Homepage
 import Services from "./components/Services";
-import Gallery from "./components/Gallery";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -25,7 +25,7 @@ function App() {
       <Services />
 
       {/* Gallery Section */}
-      <Gallery />
+      <Projects />
 
       {/* Contact Section */}
       <Contact />

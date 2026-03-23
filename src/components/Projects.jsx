@@ -15,7 +15,7 @@ const images = [
   gallery5,
 ];
 
-export default function Gallery() {
+export default function Projects() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -30,11 +30,11 @@ export default function Gallery() {
   const second = images[(index + 1) % images.length];
 
   return (
-    <section id="gallery" className="py-16 bg-gray-50">
+    <section id="projects" className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
 
-        <h2 className="text-4xl font-bold text-center text-[#008000] mb-10">
-          Gallery
+        <h2 className="text-4xl font-bold text-center mt-2 text-[#008000] mb-10">
+          Our Projects
         </h2>
 
         <AnimatePresence mode="wait">
