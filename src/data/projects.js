@@ -1,13 +1,22 @@
-import gallery1 from "/images/gallery1.jpg";
-import gallery2 from "/images/Gallery2.jpg";
-import gallery3 from "/images/Gallery3.jpg";
-import gallery4 from "/images/Gallery4.png";
-import gallery5 from "/images/Gallery5.jpg";
+
 
 export const projects = [
   {
     title: "Network Infrastructure Installation in Nairobi, Kenya",
-    images: [gallery1, gallery2, gallery3],
+    images: [    
+    "/images/Cabling/cabling/Cabling1.jpeg",
+    "/images/Cabling/cabling/Cabling2.jpeg",
+    "/images/Cabling/cabling/Cabling3.jpeg",
+    "/images/Cabling/cabling/Cabling4.jpeg",
+    "/images/Cabling/cabling/Cabling5.jpeg",
+    "/images/Cabling/cabling/Cabling6.jpeg",
+    "/images/Cabling/cabling/Cabling7.jpeg",
+    "/images/Cabling/cabling/Cabling8.jpeg",
+    "/images/Cabling/cabling/Cabling9.jpeg",
+    "/images/Cabling/cabling/Cabling10.jpeg",
+    "/images/Cabling/cabling/Cabling11.jpeg",
+    "/mages/Cabling/cabling/Cabling 12.jpeg",
+    ],
     shortDesc:
       "Delivered structured network cabling and infrastructure setup for businesses in Nairobi, Kenya.",
     fullDesc:
@@ -22,7 +31,7 @@ export const projects = [
 
   {
     title: "CCTV Installation Services in Nairobi, Kenya",
-    images: [gallery2, gallery3, gallery4],
+    images: [],
     shortDesc:
       "Installed and configured CCTV surveillance systems for residential and commercial security.",
     fullDesc:
@@ -37,7 +46,7 @@ export const projects = [
 
   {
     title: "CCTV Monitoring System Setup in Nairobi",
-    images: [gallery3, gallery4, gallery5],
+    images: [],
     shortDesc:
       "Configured centralized CCTV monitoring systems with live feeds and recording capabilities.",
     fullDesc:
@@ -52,7 +61,7 @@ export const projects = [
 
   {
     title: "IT Hardware Installation & Setup Services",
-    images: [gallery1, gallery4, gallery5],
+    images: [],
     shortDesc:
       "Provided installation and configuration of IT hardware and networking equipment.",
     fullDesc:
@@ -67,7 +76,7 @@ export const projects = [
 
   {
     title: "Website Development Services in Nairobi, Kenya",
-    images: [gallery2, gallery3, gallery5],
+    images: [],
     shortDesc:
       "Designed and developed responsive business websites with modern UI/UX.",
     fullDesc:
@@ -82,7 +91,7 @@ export const projects = [
 
   {
     title: "Biometric Access Control System Installation",
-    images: [gallery1, gallery2, gallery4],
+    images: [],
     shortDesc:
       "Installed biometric systems for secure access control and attendance tracking.",
     fullDesc:
