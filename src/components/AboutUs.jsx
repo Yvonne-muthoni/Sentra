@@ -119,8 +119,8 @@ export default function AboutUs() {
                 <h3 className="text-xl font-bold text-green-600">Mission</h3>
               </div>
               <p className="text-gray-700">
-                To design and deliver dependable ICT systems that improve efficiency,
-                connectivity, and security.
+               To design, implement, and support dependable ICT and smart technology systems that improve connectivity, enhance security, and enable organizations to operate efficiently in a rapidly evolving digital environment.
+
               </p>
             </motion.div>
 
@@ -130,7 +130,7 @@ export default function AboutUs() {
                 <h3 className="text-xl font-bold text-blue-600">Vision</h3>
               </div>
               <p className="text-gray-700">
-                To be a leading provider of smart technology solutions across Africa.
+               To become a leading provider of ICT and smart technology solutions across East Africa, setting the standard for reliability, innovation, and client-focused service delivery.
               </p>
             </motion.div>
 

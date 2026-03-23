@@ -1,65 +1,88 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-import gallery1 from "/images/gallery1.jpg";
-import gallery2 from "/images/Gallery2.jpg";
-import gallery3 from "/images/Gallery3.jpg";
-import gallery4 from "/images/Gallery4.png";
-import gallery5 from "/images/Gallery5.jpg";
-
-const images = [
-  gallery1,
-  gallery2,
-  gallery3,
-  gallery4,
-  gallery5,
-];
+import { useNavigate } from "react-router-dom";
+import { projects } from "../data/projects";
 
 export default function Projects() {
   const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((prev) => (prev + 2) % images.length);
-    }, 4000); // change every 4 seconds
+      setIndex((prev) => (prev + 1) % projects.length);
+    }, 4000);
 
     return () => clearInterval(timer);
   }, []);
 
-  const first = images[index];
-  const second = images[(index + 1) % images.length];
+  const project = projects[index];
 
   return (
     <section id="projects" className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
 
-        <h2 className="text-4xl font-bold text-center mt-2 text-[#008000] mb-10">
+        <h2 className="text-4xl font-bold text-center text-[#008000] mb-4">
           Our Projects
         </h2>
 
+        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+          A selection of our recent ICT and smart technology installations showcasing
+          our commitment to quality, reliability, and practical solutions.
+        </p>
+
+        {/* HERO SLIDER */}
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -40 }}
-            transition={{ duration: 0.8 }}
-            className="grid md:grid-cols-2 gap-8"
+            className="bg-white rounded-3xl shadow-xl p-6 mb-10"
           >
-            {[first, second].map((img, i) => (
-              <div
-                key={i}
-                className="overflow-hidden rounded-3xl shadow-xl"
-              >
-                <img
-                  src={img}
-                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
-                  alt="Sentra Cord gallery"
-                />
-              </div>
-            ))}
+            <img
+              src={project.images[0]}
+              className="w-full h-80 object-cover rounded-2xl mb-4"
+            />
+
+            <h3 className="text-2xl font-bold mb-2">
+              {project.title}
+            </h3>
+
+            <p className="text-gray-600">
+              {project.shortDesc}
+            </p>
           </motion.div>
         </AnimatePresence>
+
+        {/* PROJECT GRID */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {projects.map((project, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-3xl shadow-lg p-6"
+            >
+              <img
+                src={project.images[0]}
+                className="w-full h-64 object-cover rounded-xl mb-4"
+              />
+
+              <h3 className="text-lg font-bold mb-2">
+                {project.title}
+              </h3>
+
+              <p className="text-gray-600 mb-3">
+                {project.shortDesc}
+              </p>
+
+              <button
+                onClick={() => navigate(`/projects/${i}`)}
+                className="text-green-600 font-semibold"
+              >
+                Read more →
+              </button>
+            </div>
+          ))}
+        </div>
 
       </div>
     </section>
