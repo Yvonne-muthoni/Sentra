@@ -25,7 +25,7 @@ const Homepage = () => {
         className="relative z-20 max-w-3xl px-6"
       >
         {/* Top Heading */}
-       <h1 className="text-gray-300 text-2xl md:text-3xl font-extrabold text-center w-full mb-6 -ml-30 whitespace-normal md:whitespace-nowrap">
+       <h1 className="text-gray-300 text-3xl md:text-4xl font-extrabold text-center w-full mb-6 ml-25 whitespace-normal md:whitespace-nowrap">
        Sentra Cord Delivers Smart ICT and Technology Solutions Including
        </h1>
 
