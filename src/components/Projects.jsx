@@ -21,7 +21,7 @@ export default function Projects() {
     <section id="projects" className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
 
-        <h2 className="text-4xl font-bold text-center text-[#008000] mb-4">
+        <h2 className="text-4xl font-bold text-center text-[#008000] mb-4 mt-4">
           Our Projects
         </h2>
 
@@ -76,7 +76,7 @@ export default function Projects() {
 
               <button
                 onClick={() => navigate(`/projects/${i}`)}
-                className="text-green-600 font-semibold"
+                className="text-[#008000] font-semibold"
               >
                 Read more →
               </button>

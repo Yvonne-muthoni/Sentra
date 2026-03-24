@@ -30,7 +30,7 @@ const Homepage = () => {
        </h1>
 
         {/* Typing Effect */}
-        <h2 className="text-yellow-500 text-2xl sm:text-4xl md:text-5xl font-bold mb-6">
+        <h2 className="text-[#FFA500] text-2xl sm:text-4xl md:text-5xl font-bold mb-6">
           <TypeAnimation
             sequence={[
               "Network Infrastructure",
@@ -68,7 +68,7 @@ const Homepage = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#whoweare"
-            className="bg-green-500 text-white px-6 py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-600 transition duration-300 shadow-lg"
+            className="bg-[#008000]  text-white px-6 py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-600 transition duration-300 shadow-lg"
           >
             Get Started
           </a>

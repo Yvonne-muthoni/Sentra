@@ -153,6 +153,21 @@ export default function Services() {
             ))}
           </motion.div>
         </AnimatePresence>
+         {/* NAVIGATION DOTS */}
+        <div className="flex justify-center mt-12 space-x-3">
+          {[...Array(totalPages)].map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setPage(i)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                page === i
+                  ? "bg-[#008000] scale-125"
+                  : "bg-gray-400 hover:bg-[#FFA500]"
+              }`}
+            />
+          ))}
+        </div>
+
 
         {/* APPROACH & WHY CHOOSE */}
         <div className="mt-24">
@@ -162,8 +177,8 @@ export default function Services() {
 
           <div className="grid md:grid-cols-2 gap-12">
 
-            <motion.div className="bg-linear-to-br from-green-50 to-white rounded-3xl p-10 shadow-lg border-l-4 border-green-600">
-              <h3 className="text-2xl font-bold text-green-600 mb-6">
+            <motion.div className="bg-linear-to-br from-green-50 to-white rounded-3xl p-10 shadow-lg border-l-4 border-[#008000]">
+              <h3 className="text-2xl font-bold text-[#008000] mb-6">
                 Our Approach
               </h3>
 
@@ -171,7 +186,7 @@ export default function Services() {
                 {["Assess needs", "Design solutions", "Implement systems", "Provide support"].map(
                   (item, idx) => (
                     <div key={idx} className="flex items-center gap-3">
-                      <div className="w-7 h-7 bg-green-600 text-white rounded-full flex items-center justify-center text-sm">
+                      <div className="w-7 h-7 bg-[#008000] text-white rounded-full flex items-center justify-center text-sm">
                         {idx + 1}
                       </div>
                       <p>{item}</p>
@@ -200,22 +215,6 @@ export default function Services() {
 
           </div>
         </div>
-
-        {/* NAVIGATION DOTS */}
-        <div className="flex justify-center mt-12 space-x-3">
-          {[...Array(totalPages)].map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setPage(i)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                page === i
-                  ? "bg-[#008000] scale-125"
-                  : "bg-gray-400 hover:bg-[#FFA500]"
-              }`}
-            />
-          ))}
-        </div>
-
       </div>
     </section>
   );

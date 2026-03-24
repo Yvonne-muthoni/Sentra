@@ -29,7 +29,7 @@ export default function ProjectDetails() {
     <div className="max-w-5xl mx-auto px-6 py-10">
 
       {/* TITLE */}
-      <h1 className="text-3xl font-bold mb-6">
+      <h1 className="text-3xl font-bold mb-6 mt-10">
         {project.title}
       </h1>
 

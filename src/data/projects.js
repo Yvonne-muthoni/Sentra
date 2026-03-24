@@ -15,7 +15,7 @@ export const projects = [
     "/images/Cabling/cabling/Cabling9.jpeg",
     "/images/Cabling/cabling/Cabling10.jpeg",
     "/images/Cabling/cabling/Cabling11.jpeg",
-    "/mages/Cabling/cabling/Cabling 12.jpeg",
+    
     ],
     shortDesc:
       "Delivered structured network cabling and infrastructure setup for businesses in Nairobi, Kenya.",
@@ -31,7 +31,14 @@ export const projects = [
 
   {
     title: "CCTV Installation Services in Nairobi, Kenya",
-    images: [],
+    images: [
+    "/images/Mounting/Mounting/Mounting6.jpeg",
+    "/images/Mounting/Mounting/Mounting2.jpeg",
+    "/images/Mounting/Mounting/Mounting1.jpeg",
+    "/images/Mounting/Mounting/Mounting3.jpeg",
+    "/images/Mounting/Mounting/Mounting4.jpeg",
+    "/images/Mounting/Mounting/Mounting5.jpeg"
+    ],
     shortDesc:
       "Installed and configured CCTV surveillance systems for residential and commercial security.",
     fullDesc:
@@ -46,7 +53,16 @@ export const projects = [
 
   {
     title: "CCTV Monitoring System Setup in Nairobi",
-    images: [],
+    images: [
+        "/images/Cameras/Cameeras/Camera8.jpeg",
+"/images/Cameras/Cameeras/Camera7.jpeg",
+"/images/Cameras/Cameeras/Camera6.jpeg",
+"/images/Cameras/Cameeras/Camera5.jpeg",
+"/images/Cameras/Cameeras/Camera4.jpeg",
+"/images/Cameras/Cameeras/Camera3.jpeg",
+"/images/Cameras/Cameeras/Camera2.jpeg",
+"/images/Cameras/Cameeras/Camera1.jpeg"
+    ],
     shortDesc:
       "Configured centralized CCTV monitoring systems with live feeds and recording capabilities.",
     fullDesc:
@@ -61,7 +77,9 @@ export const projects = [
 
   {
     title: "IT Hardware Installation & Setup Services",
-    images: [],
+    images: [
+        
+    ],
     shortDesc:
       "Provided installation and configuration of IT hardware and networking equipment.",
     fullDesc:
