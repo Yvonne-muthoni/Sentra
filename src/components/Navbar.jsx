@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* Burger */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-[#FFA500] text-3xl"
+          className="md:hidden text-[#FFA500] text-3xl mb-4"
         >
           <i className={`fas ${open ? "fa-xmark" : "fa-bars"}`}></i>
         </button>
