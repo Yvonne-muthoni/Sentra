@@ -7,7 +7,7 @@ const Navbar = () => {
   const navItems = ["Home", "About Us", "Services", "Projects", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md">
+    <nav className="fixed top-0 left-0 w-full z-999 bg-black/30 backdrop-blur-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
 
         {/* Logo */}
@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* Burger */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-[#FFA500] text-3xl mb-4"
+          className="md:hidden text-[#FFA500] text-3xl relative z-1000"
         >
           <i className={`fas ${open ? "fa-xmark" : "fa-bars"}`}></i>
         </button>

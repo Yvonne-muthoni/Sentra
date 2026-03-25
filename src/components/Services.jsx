@@ -94,7 +94,7 @@ export default function Services() {
     <section id="services" className="py-16 bg-white">
       <div className="max-w-10xl mx-auto px-6 text-center">
 
-        <h2 className="text-4xl font-bold text-[#008000] mt-6">
+        <h2 className="text-4xl font-bold text-[#008000]">
           Our Core Services
         </h2>
 
