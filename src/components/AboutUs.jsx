@@ -5,7 +5,7 @@ export default function AboutUs() {
 
   return (
     <section id="aboutus" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-350 mx-auto px-6">
 
         {/* TITLE */}
         <motion.h2
@@ -17,41 +17,34 @@ export default function AboutUs() {
         </motion.h2>
 
         {/* INTRO */}
-        <p className="text-gray-700 text-lg text-center max-w-4xl mx-auto mb-16">
+        <p className="text-gray-700 text-medium text-center max-w-4xl mx-auto mb-16">
           Sentra Cord is a trusted ICT and smart technology solutions provider based in Kenya,
           dedicated to helping businesses, institutions, and homeowners build secure, efficient,
           and connected environments.
         </p>
 
         {/* OUR STORY SECTION */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center mt-0.5">
 
           {/* LEFT - STORY */}
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            className="space-y-6"
-          >
-            <h2 className="text-3xl font-bold text-blue-600">
-              Our Story
-            </h2>
+     initial={{ opacity: 0, x: -40 }}
+     whileInView={{ opacity: 1, x: 0 }}
+     className="space-y-6"
+   >
+  <h2 className="text-3xl font-bold text-blue-600">
+    Our Story
+  </h2>
+     <p className="text-gray-700">
+     Sentra Cord was established to bridge the gap between technology and practical everyday use.
+     We identified a growing demand for dependable ICT systems that are reliable, secure, and easy to manage.
+     Over time, we have built a strong reputation for delivering high-quality smart technology solutions
+     across residential, commercial, and institutional projects.
+     We believe in delivering solutions that are functional, future-ready, and scalable.
+         </p>
+        </motion.div>
 
-            <p className="text-gray-700">
-              Sentra Cord was established to bridge the gap between technology and practical everyday use.
-              We identified a growing demand for dependable ICT systems that are reliable, secure, and easy to manage.
-            </p>
-
-            <p className="text-gray-700">
-              Over time, we have built a strong reputation for delivering high-quality smart technology solutions
-              across residential, commercial, and institutional projects.
-            </p>
-
-            <p className="text-gray-700">
-              We believe in delivering solutions that are functional, future-ready, and scalable.
-            </p>
-          </motion.div>
-
-          {/* RIGHT - IMAGE WITH BUTTON */}
+          {/* RIGHT - IMAGE */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -64,24 +57,36 @@ export default function AboutUs() {
             />
 
             {/* DARK OVERLAY */}
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
 
-            {/* TEXT + BUTTON OVER IMAGE */}
-            <div className="absolute inset-0 flex flex-col justify-end items-start p-6">
-              <h3 className="text-white text-2xl font-bold mb-2">
-                Smart Technology Solutions
-              </h3>
-              <p className="text-gray-200 text-sm mb-4">
-                Empowering businesses and homes with secure ICT systems.
-              </p>
+            {/* CONTENT INSIDE IMAGE */}
+            <div className="absolute inset-0 flex items-end justify-between p-6">
 
-              {/* 🔥 TRANSPARENT BUTTON */}
-              <a
+              {/* LEFT TEXT (ANIMATED) */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+              >
+                <h3 className="text-white text-2xl font-bold mb-2">
+                  Smart Technology Solutions
+                </h3>
+                <p className="text-gray-200 text-sm max-w-xs">
+                  Empowering businesses and homes with secure ICT systems.
+                </p>
+              </motion.div>
+
+              {/* RIGHT BUTTON (ANIMATED) */}
+              <motion.a
                 href="#services"
-                className="border border-white text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-[#008000] transition"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300"
               >
                 Our Services
-              </a>
+              </motion.a>
+
             </div>
           </motion.div>
 
@@ -146,7 +151,7 @@ export default function AboutUs() {
           {/* WHY TRUST US */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-2xl font-bold text-blue-600 mb-6">
               Why Clients Trust Us
