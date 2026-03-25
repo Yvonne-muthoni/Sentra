@@ -22,28 +22,42 @@ export default function AboutUs() {
           dedicated to helping businesses, institutions, and homeowners build secure, efficient,
           and connected environments.
         </p>
+{/* OUR STORY SECTION */}
+<div className="grid md:grid-cols-2 gap-12 items-center mt-20">
 
-        {/* OUR STORY SECTION */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mt-0.5">
+  {/* LEFT - STORY */}
+  <motion.div
+    initial={{ opacity: 0, x: -40 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    className="space-y-6"
+  >
+    <h2 className="text-3xl font-bold text-blue-600">
+      Our Story
+    </h2>
 
-          {/* LEFT - STORY */}
-          <motion.div
-     initial={{ opacity: 0, x: -40 }}
-     whileInView={{ opacity: 1, x: 0 }}
-     className="space-y-6"
-   >
-  <h2 className="text-3xl font-bold text-blue-600">
-    Our Story
-  </h2>
-     <p className="text-gray-700">
-     Sentra Cord was established to bridge the gap between technology and practical everyday use.
-     We identified a growing demand for dependable ICT systems that are reliable, secure, and easy to manage.
-     Over time, we have built a strong reputation for delivering high-quality smart technology solutions
-     across residential, commercial, and institutional projects.
-     We believe in delivering solutions that are functional, future-ready, and scalable.
-         </p>
-        </motion.div>
+    <p className="text-gray-700 leading-relaxed">
+      Sentra Cord was established to bridge the gap between technology and practical everyday use.
+      We identified a growing demand for dependable ICT systems that are reliable, secure, and easy to manage.
+      Over time, we have built a strong reputation for delivering high-quality smart technology solutions
+      across residential, commercial, and institutional projects.
+      We believe in delivering solutions that are functional, future-ready, and scalable.
+    </p>
 
+    {/* WHAT SETS US APART */}
+    <div>
+      <h3 className="font-semibold text-lg mb-3">
+        What sets us apart:
+      </h3>
+
+      <ul className="space-y-2 text-gray-700">
+        <li>✔ Solution-Oriented Approach</li>
+        <li>✔ Reliability & Performance</li>
+        <li>✔ Professional Execution</li>
+        <li>✔ Client-Centered Service</li>
+        <li>✔ End-to-End Delivery</li>
+      </ul>
+    </div>
+  </motion.div>
           {/* RIGHT - IMAGE */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
@@ -95,39 +109,14 @@ export default function AboutUs() {
         {/* THREE COLUMN SECTION */}
         <div className="grid md:grid-cols-3 gap-10 items-start mb-20">
 
-          {/* WHAT SETS US APART */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-          >
-            <h2 className="text-2xl font-bold text-blue-600 mb-6">
-              What Sets Us Apart
-            </h2>
-
-            <div className="space-y-4">
-              {[
-                "Solution-Oriented Approach",
-                "Reliability & Performance",
-                "Professional Execution",
-                "Client-Centered Service",
-                "End-to-End Delivery",
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-start bg-white shadow-md rounded-xl p-4 border-l-4 border-[#008000]"
-                >
-                  ✔ <span className="ml-2">{item}</span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
+          
 
           {/* CORE VALUES */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
-            <h2 className="text-2xl font-bold text-blue-600 mb-6">
+            <h2 className="text-2xl font-bold text-blue-600 mt-8">
               Our Core Values
             </h2>
 
@@ -147,13 +136,40 @@ export default function AboutUs() {
               ))}
             </div>
           </motion.div>
+      {/* MISSION & VISION */}
+<div className="mt-6">
+  <div className="grid md:grid-cols-2 gap-10">
 
+    {/* MISSION */}
+    <div className="bg-white shadow-lg rounded-2xl p-8 border-l-4 border-blue-600 hover:shadow-xl transition duration-300">
+      <h2 className="text-2xl font-bold text-blue-600 mb-4">
+        Mission
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        To design and deliver reliable, secure, and scalable ICT and smart technology solutions
+        that enhance efficiency, connectivity, and safety for our clients.
+      </p>
+    </div>
+
+    {/* VISION */}
+         <div className="bg-white shadow-lg rounded-2xl p-8 border-l-4  border-green-500 hover:shadow-xl transition duration-300">
+        <h2 className="text-2xl font-bold text-green-500 mb-4">
+         Vision
+        </h2>
+         <p className="text-gray-700 leading-relaxed">
+          To become a leading provider of ICT and smart technology solutions across Africa,
+           recognized for innovation, reliability, and excellence.
+          </p>
+          </div>
+
+        </div>
+        </div>
           {/* WHY TRUST US */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
           >
-            <h2 className="text-2xl font-bold text-blue-600 mb-6">
+            <h2 className="text-2xl font-bold text-blue-600 mt-8">
               Why Clients Trust Us
             </h2>
 
