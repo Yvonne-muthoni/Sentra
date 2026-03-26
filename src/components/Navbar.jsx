@@ -7,7 +7,7 @@ const Navbar = () => {
   const navItems = ["Home", "About Us", "Services", "Projects", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-999 bg-black/30 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 w-full z-999 bg-black ">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
 
         {/* Logo */}

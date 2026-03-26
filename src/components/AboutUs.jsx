@@ -182,7 +182,7 @@ export default function AboutUs() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="bg-blue-50 shadow-lg rounded-2xl p-6"
+            className="bg-blue-50 shadow-lg rounded-2xl p-2"
           >
             <h2 className="text-2xl font-bold text-[#FFA500] mb-3">
               Our Core Values
@@ -200,7 +200,7 @@ export default function AboutUs() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="bg-blue-50 shadow-lg rounded-2xl p-6"
+            className="bg-blue-50 shadow-lg rounded-2xl p-2"
           >
             <h2 className="text-2xl font-bold text-[#FFA500] mb-3">
               Why Clients Trust Us
