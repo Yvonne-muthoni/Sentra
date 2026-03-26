@@ -136,9 +136,9 @@ export default function AboutUs() {
               ))}
             </div>
           </motion.div>
-      {/* MISSION & VISION */}
+    {/* MISSION & VISION */}
 <div className="mt-6">
-  <div className="grid md:grid-cols-2 gap-10">
+  <div className="flex flex-col gap-6">
 
     {/* MISSION */}
     <div className="bg-white shadow-lg rounded-2xl p-8 border-l-4 border-blue-600 hover:shadow-xl transition duration-300">
@@ -152,18 +152,18 @@ export default function AboutUs() {
     </div>
 
     {/* VISION */}
-         <div className="bg-white shadow-lg rounded-2xl p-8 border-l-4  border-green-500 hover:shadow-xl transition duration-300">
-        <h2 className="text-2xl font-bold text-green-500 mb-4">
-         Vision
-        </h2>
-         <p className="text-gray-700 leading-relaxed">
-          To become a leading provider of ICT and smart technology solutions across Africa,
-           recognized for innovation, reliability, and excellence.
-          </p>
-          </div>
+    <div className="bg-white shadow-lg rounded-2xl p-8 border-l-4 border-green-500 hover:shadow-xl transition duration-300">
+      <h2 className="text-2xl font-bold text-green-500 mb-4">
+        Vision
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        To become a leading provider of ICT and smart technology solutions across Africa,
+        recognized for innovation, reliability, and excellence.
+      </p>
+    </div>
 
-        </div>
-        </div>
+  </div>
+</div>
           {/* WHY TRUST US */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
