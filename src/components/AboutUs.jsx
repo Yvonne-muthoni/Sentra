@@ -154,10 +154,10 @@ export default function AboutUs() {
             >
               {activeTab === "mission" && (
                 <>
-                  <h2 className="text-sm font-bold text-blue-600 mb-2">
+                  <h2 className="text-2xl font-bold text-blue-600 mb-2">
                     Mission
                   </h2>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed text-sm">
                     To design and deliver reliable, secure, and scalable ICT and smart technology solutions
                     that enhance efficiency, connectivity, and safety for our clients.
                   </p>
@@ -169,7 +169,7 @@ export default function AboutUs() {
                   <h2 className="text-2xl font-bold text-[#008000]  mb-2">
                     Vision
                   </h2>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed text-sm">
                     To become a leading provider of ICT and smart technology solutions across Africa,
                     recognized for innovation, reliability, and excellence.
                   </p>
