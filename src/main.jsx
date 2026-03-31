@@ -1,16 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 
-// ✅ ADD THIS
-import { BrowserRouter } from "react-router-dom";
-
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    {/* ✅ WRAP APP HERE */}
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );

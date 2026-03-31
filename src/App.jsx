@@ -1,49 +1,24 @@
 import { Routes, Route } from "react-router-dom";
-import React from "react";
-
 import Navbar from "./components/Navbar";
-import Homepage from "./components/Homepage";
-import AboutUs from "./components/AboutUs";
-import Services from "./components/Services";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import ProjectDetails from "./pages/ProjectDetails";
+import Homepage from "./pages/Homepage";
+import AboutUs from "./pages/AboutUs";
+import Services from "./pages/Services";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-
+    <>
       <Navbar />
 
       <Routes>
-
-        {/* MAIN PAGE */}
-        <Route
-          path="/"
-          element={
-            <>
-              <Homepage />
-              <AboutUs />
-              <Services />
-              <Projects />
-              <Contact />
-            </>
-          }
-        />
-
-        {/* PROJECT DETAILS */}
-        <Route
-          path="/projects/:id"
-          element={<ProjectDetails />}
-        />
-
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        
       </Routes>
-
-      <Footer />
-
-    </div>
+    </>
   );
 }
-
-export default App;
