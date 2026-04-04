@@ -5,7 +5,12 @@ export default function Services() {
     <div className="bg-gray-300 text-white">
 
       {/* ================= HERO ================= */}
-      <section className="pt-28 pb-16 text-center px-6 bg-['/images/Project Unifi/Project Unifi Network Installation/k (1).jpg')] bg-center relative">
+      <section
+        className="pt-28 pb-20 text-center px-6 bg-cover bg-center relative"
+        style={{
+          backgroundImage: "url('/images/Project%20Unifi/Project%20Unifi%20Network%20Installation/k%20(1).jpg')"
+        }}
+      >
         <div className="absolute inset-0 bg-black/70"></div>
 
         <div className="relative z-10 max-w-3xl mx-auto">
@@ -43,37 +48,82 @@ export default function Services() {
 
         {[
           {
-            title: "Website Development & Digital Presence ",
-            Description:"We design modern, responsive websites that help your business grow online.",
-            icon: "fas fa-video",
-            items: ["HD & IP Cameras", 
-              "Remote Monitoring",
-              "Installation & Maintenance"],
+            title: "Website Development & Digital Presence",
+            description: "We design modern, responsive websites that help your business grow online.",
+            icon: "fas fa-globe",
+            items: [
+              "Business websites (company, portfolio, landing pages)",
+              "Domain & hosting setup",
+              "Mobile-responsive design",
+              "Basic SEO setup",
+              "Website maintenance & updates"
+            ],
+            outcome: "A professional online presence that attracts and converts customers."
           },
           {
-            title: "Network Installation",
+            title: "Network Infrastructure & Connectivity",
+            description: "Reliable and secure networks for homes and businesses.",
             icon: "fas fa-network-wired",
-            items: ["Structured Cabling", "LAN/WAN Networks", "WiFi Setup", "Troubleshooting"],
+            items: [
+              "LAN & structured cabling",
+              "Wi-Fi installation & optimization",
+              "Router, firewall & switch setup",
+              "Network performance assessment",
+              "Internet configuration"
+            ],
+            outcome: "Stable connectivity with minimal downtime."
           },
           {
-            title: "Smart Home Automation",
+            title: "IT Support & Systems Management",
+            description: "Ongoing technical support to keep your systems running smoothly.",
+            icon: "fas fa-tools",
+            items: [
+              "Troubleshooting & fault resolution",
+              "Software installation & setup",
+              "Email & user account configuration",
+              "Remote & on-site support",
+              "Preventive maintenance"
+            ],
+            outcome: "Reduced downtime and improved productivity."
+          },
+          {
+            title: "Smart Security & Surveillance Systems",
+            description: "Advanced security systems for protection and control.",
+            icon: "fas fa-shield-alt",
+            items: [
+              "CCTV installation & setup",
+              "Access control systems",
+              "Biometric systems",
+              "Smart home/office security",
+              "System monitoring setup"
+            ],
+            outcome: "Improved security, visibility, and control."
+          },
+          {
+            title: "Systems Installation & Integration",
+            description: "Seamless setup and integration of your technology systems.",
+            icon: "fas fa-cogs",
+            items: [
+              "Hardware installation",
+              "Software configuration",
+              "System integration",
+              "Testing & commissioning",
+              "Documentation & handover"
+            ],
+            outcome: "Fully functional systems from day one."
+          },
+          {
+            title: "Smart Home & Office Automation",
+            description: "Automate and control your environment with smart technology.",
             icon: "fas fa-home",
-            items: ["Smart Lighting", "Remote Control Systems", "Security Integration"],
-          },
-          {
-            title: "Biometric & Access Control",
-            icon: "fas fa-fingerprint",
-            items: ["Fingerprint Systems", "Face Recognition", "Door Access Control"],
-          },
-          {
-            title: "Intercom Installation",
-            icon: "fas fa-phone",
-            items: ["Audio & Video Intercom", "Gate Integration"],
-          },
-          {
-            title: "Office Communication",
-            icon: "fas fa-building",
-            items: ["PBX Setup", "Internal Communication", "VoIP Systems"],
+            items: [
+              "Smart lighting systems",
+              "Smart locks & access",
+              "IoT device integration",
+              "Remote control systems",
+              "Energy-saving automation"
+            ],
+            outcome: "Convenience, efficiency, and modern living."
           },
         ].map((service, index) => (
           <div
@@ -87,9 +137,14 @@ export default function Services() {
             </div>
 
             {/* TITLE */}
-            <h3 className="text-xl font-bold mb-3">
+            <h3 className="text-xl font-bold mb-2">
               {service.title}
             </h3>
+
+            {/* DESCRIPTION */}
+            <p className="text-gray-400 text-sm mb-3">
+              {service.description}
+            </p>
 
             {/* LIST */}
             <ul className="space-y-2 text-gray-300 text-sm mb-4">
@@ -100,6 +155,11 @@ export default function Services() {
                 </li>
               ))}
             </ul>
+
+            {/* OUTCOME */}
+            <p className="text-sm text-gray-400 italic mb-4">
+              {service.outcome}
+            </p>
 
             {/* BUTTON */}
             <Link

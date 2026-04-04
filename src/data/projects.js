@@ -32,7 +32,7 @@ export const projects = [
   {
     title: "CCTV Installation Services in Nairobi, Kenya",
     images: [
-    "/images/Mounting/Mounting/Mounting6.jpeg",
+    "/images/Cameras/Cameeras/Camera8.jpeg",
     "/images/Mounting/Mounting/Mounting2.jpeg",
     "/images/Mounting/Mounting/Mounting1.jpeg",
     "/images/Mounting/Mounting/Mounting3.jpeg",
@@ -109,7 +109,11 @@ export const projects = [
 
   {
     title: "Biometric Access Control System Installation",
-    images: [],
+    images: [
+      "/images/Biometrics/Biometric installations access Control/d (27).jpg",
+     "/images/Biometrics/Biometric installations access Control/k (2).jpg",
+     "/images/Biometrics/Biometric installations access Control/d (11).jpg",
+    ],
     shortDesc:
       "Installed biometric systems for secure access control and attendance tracking.",
     fullDesc:

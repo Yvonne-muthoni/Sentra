@@ -1,333 +1,101 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [service, setService] = useState("");
-  const [message, setMessage] = useState("");
-  const [chatOpen, setChatOpen] = useState(false);
-
   return (
-    <section
-      id="contact"
-      className="py-24 bg linear from-white to-gray-50"
-    >
+    <div className="bg-black text-white">
 
-      {/* Header */}
-      <div className="text-center mb-16 px-6">
-
-        <h2 className="text-4xl lg:text-5xl font-bold text-[#008000] mb-4">
-          Contact us
-        </h2>
-
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Tell us what you need and our team will provide a tailored solution
-          to support your business, organization, or home.
+      {/* HERO SECTION */}
+      <section className="relative bg-linear-to-r from-black via-gray-900 to-black py-20 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold">
+          Contact <span className="text-yellow-500">Us</span>
+        </h1>
+        <p className="text-gray-400 mt-4 max-w-xl mx-auto">
+          We’re here to help you secure, connect, and automate your world with reliable ICT solutions.
         </p>
 
-      </div>
+        <div className="flex flex-wrap justify-center gap-4 mt-6">
+          <button className="bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-400">
+            Call Now
+          </button>
+          <button className="bg-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-500">
+            WhatsApp
+          </button>
+        </div>
+      </section>
 
+      {/* MAIN CONTENT */}
+      <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
 
-      {/* Main Grid */}
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6">
+        {/* FORM */}
+        <div className="bg-white text-black p-6 rounded-xl shadow-lg">
+          <h2 className="text-2xl font-bold mb-4">Send Us a Message</h2>
 
-
-        {/* LEFT — FORM */}
-        <motion.form
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white p-8 rounded-3xl shadow-xl space-y-5"
-        >
-
-          <div>
-
-            <h3 className="text-2xl font-semibold mb-2">
-              Request a Quote
-            </h3>
-
-            <p className="text-gray-500 text-sm">
-              We usually respond within 24 hours.
-            </p>
-
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <input className="border p-2 rounded" placeholder="Full Name" />
+            <input className="border p-2 rounded" placeholder="Phone Number" />
           </div>
 
+          <input className="border p-2 rounded w-full mb-4" placeholder="Email Address" />
 
-          <input
-            type="text"
-            placeholder="Full Name"
-            className="w-full p-3 border rounded-xl focus:ring-2 focus:ring-[#008000]"
-            value={name}
-            onChange={(e)=>setName(e.target.value)}
-          />
-
-
-          <input
-            type="email"
-            placeholder="Email Address"
-            className="w-full p-3 border rounded-xl focus:ring-2 focus:ring-[#008000]"
-            value={email}
-            onChange={(e)=>setEmail(e.target.value)}
-          />
-
-
-          {/* Service Dropdown */}
-          <select
-            className="w-full p-3 border rounded-xl focus:ring-2 focus:ring-[#008000]"
-            value={service}
-            onChange={(e)=>setService(e.target.value)}
-          >
-
-            <option>Select Service</option>
-
-            <option>Network Installation</option>
-
-            <option>CCTV Installation</option>
-
-            <option>ICT Support</option>
-
-            <option>System Administration</option>
-
-            <option>Other</option>
-
+          <select className="border p-2 rounded w-full mb-4">
+            <option>Service Needed</option>
+            <option>CCTV</option>
+            <option>Networking</option>
           </select>
 
-
-
           <textarea
+            className="border p-2 rounded w-full mb-4"
             rows="4"
-            placeholder="Tell us about your project..."
-            className="w-full p-3 border rounded-xl focus:ring-2 focus:ring-[#008000]"
-            value={message}
-            onChange={(e)=>setMessage(e.target.value)}
+            placeholder="Project Details"
           />
 
-
-
-          <button
-            className="w-full bg-[#008000] text-white py-3 rounded-xl hover:bg-green-700 transition font-medium"
-          >
-
-            Send Request
-
+          <button className="w-full bg-yellow-500 py-3 rounded font-semibold hover:bg-yellow-400">
+            Send Message
           </button>
+        </div>
 
+        {/* CONTACT INFO */}
+        <div className="space-y-6">
 
-        </motion.form>
-
-
-
-        {/* RIGHT — CONTACT INFO */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="space-y-6"
-        >
-
-
-          <div>
-
-            <h3 className="text-2xl font-semibold mb-4">
-              Contact Information
-            </h3>
-
-            <p className="text-gray-600">
-              Reach out directly or use the form.
-            </p>
-
+          <div className="bg-gray-900 p-4 rounded-lg">
+            <h3 className="font-bold text-lg">Phone</h3>
+            <p className="text-yellow-500">+254 700 000 000</p>
           </div>
 
+          <div className="bg-gray-900 p-4 rounded-lg">
+            <h3 className="font-bold text-lg">WhatsApp</h3>
+            <p className="text-green-500">+254 700 000 000</p>
+          </div>
 
+          <div className="bg-gray-900 p-4 rounded-lg">
+            <h3 className="font-bold text-lg">Email</h3>
+            <p className="text-yellow-500">info@company.com</p>
+          </div>
 
-          {/* Phone */}
-          <a
-            href="tel:+254798467717"
-            className="flex items-center gap-4 p-4 bg-white rounded-xl shadow hover:shadow-lg transition"
-          >
+          <div className="bg-gray-900 p-4 rounded-lg">
+            <h3 className="font-bold text-lg">Location</h3>
+            <p>Nairobi, Kenya</p>
+          </div>
 
-            <i className="fa-solid fa-phone text-blue-500 text-xl"></i>
+        </div>
+      </section>
 
-            <div>
+      {/* CTA */}
+      <section className="text-center py-16 bg-linear-to-r from-gray-900 to-black">
+        <h2 className="text-3xl font-bold">
+          Ready to Start <span className="text-yellow-500">Your Project?</span>
+        </h2>
 
-              <p className="font-medium">Call Us</p>
+        <div className="flex justify-center gap-4 mt-6">
+          <button className="bg-yellow-500 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400">
+            Request Quote
+          </button>
+          <button className="bg-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-500">
+            WhatsApp Us
+          </button>
+        </div>
+      </section>
 
-              <p className="text-gray-500 text-sm">
-                +254 798 467 717
-              </p>
-
-            </div>
-
-          </a>
-   
-
-          {/* Email */}
-          <a
-            href="mailto:info@sentracord.co.ke"
-            className="flex items-center gap-4 p-4 bg-white rounded-xl shadow hover:shadow-lg transition"
-          >
-
-            <i className="fa-solid fa-envelope text-[#008000] text-xl"></i>
-
-            <div>
-
-              <p className="font-medium">
-                Email
-              </p>
-
-              <p className="text-gray-500 text-sm">
-                info@sentracord.co.ke
-              </p>
-
-            </div>
-
-          </a>
-
-
-
-          {/* Location */}
-          <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow">
-
-            <i className="fa-solid fa-location-dot text-red-500 text-xl"></i>
-
-            <div>
-
-              <p className="font-medium">
-                Location
-              </p>
-
-              <p className="text-gray-500 text-sm">
-                Nairobi, Kenya
-              </p>
-
-            </div>
-         </div>
-        {/* Website */}
-<a
-  href="https://sentracord.co.ke"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-4 p-4 bg-white rounded-xl shadow hover:shadow-lg transition"
->
-
-  <i className="fa-solid fa-globe text-blue-500 text-xl"></i>
-
-  <div>
-
-    <p className="font-medium">
-      Website
-    </p>
-
-    <p className="text-gray-500 text-sm">
-      www.sentracord.co.ke
-    </p>
-
-  </div>
-
-</a>
-        </motion.div>
-
-
-      </div>
-<div className="fixed bottom-8 right-8 z-50 flex flex-col items-center">
-
-  <AnimatePresence>
-
-    {chatOpen && (
-
-      <>
-
-          <motion.a
-  href="https://wa.me/254798467717"  // WhatsApp direct chat link
-  target="_blank"
-  rel="noopener noreferrer"
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  exit={{ opacity: 0, y: 20 }}
-  className="w-12 h-12 mb-3 flex items-center justify-center shadow-lg bg-green-500 rounded-full"
-  title="WhatsApp"
->
-  <i className="fa-brands fa-whatsapp text-white text-xl"></i>
-</motion.a>
-
-        <motion.a
-          href="https://linkedin.com"
-          target="_blank"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          className="w-12 h-12 mb-3 rounded-full bg-blue-700 flex items-center justify-center shadow-lg"
-        >
-          <i className="fa-brands fa-linkedin-in text-white"></i>
-        </motion.a>
-
-
-        <motion.a
-          href="https://twitter.com"
-          target="_blank"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          className="w-12 h-12 mb-3 rounded-full bg-black flex items-center justify-center shadow-lg"
-        >
-          <i className="fa-brands fa-x-twitter text-white"></i>
-        </motion.a>
-
-
-        <motion.a
-          href="https://www.facebook.com/profile.php?id=61582058008460&mibextid=rS40aB7S9Ucbxw6v"
-          target="_blank"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          className="w-12 h-12 mb-3 rounded-full bg-blue-600 flex items-center justify-center shadow-lg"
-        >
-          <i className="fa-brands fa-facebook-f text-white"></i>
-        </motion.a>
-
-
-        <motion.a
-          href="https://www.tiktok.com/@sentra_cord?_r=1&_t=ZS-94axu3VXbpU"
-          target="_blank"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          className="w-12 h-12 mb-3 rounded-full bg-black flex items-center justify-center shadow-lg"
-        >
-          <i className="fa-brands fa-tiktok text-white"></i>
-        </motion.a>
-
-
-        <motion.a
-          href="https://www.instagram.com/sentracord?igsh=MjhqMmNoemxjbTlx&utm_source=ig_contact_invite"
-          target="_blank"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          className="w-12 h-12 mb-3 rounded-full bg-pink-600 flex items-center justify-center shadow-lg"
-        >
-          <i className="fa-brands fa-instagram text-white"></i>
-        </motion.a>
-
-      </>
-
-    )}
-
-  </AnimatePresence>
-  {/* MAIN BUTTON */}
-  <button
-    onClick={() => setChatOpen(!chatOpen)}
-    className="w-16 h-16 bg-[#008000] rounded-full flex items-center justify-center text-white shadow-xl hover:scale-110 transition"
-  >
-
-    <i className="fa-solid fa-comments text-xl"></i>
-
-  </button>
-
-</div>
-
-    </section>
+    </div>
   );
 }
