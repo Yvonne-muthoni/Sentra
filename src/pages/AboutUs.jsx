@@ -4,19 +4,45 @@ import { Link } from "react-router-dom";
 export default function AboutUs() {
   return (
     <div className="bg-gray-100">
+{/* ================= HERO SECTION ================= */}
+<section
+  className="relative py-32 text-center bg-cover bg-center"
+  style={{ backgroundImage: "url('/images/Network Cabinet/Network cabinet cabling and Labellind/d (25).jpg')" }}
+>
+  {/* DARK OVERLAY */}
+  <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* ================= HEADER ================= */}
-      <section className="pt-28 pb-10 text-center bg-linear-to-b from-gray-200 to-gray-100">
-        <h1 className="text-4xl font-bold text-blue-600 mb-4">
-          About Us
-        </h1>
-        <p className="max-w-3xl mx-auto text-gray-600">
-        Sentra Cord is a trusted ICT and smart technology solutions provider based in Kenya, dedicated to helping businesses, institutions, and homeowners build secure, efficient, and connected environments.
-        <br />
-        We specialize in delivering reliable ICT infrastructure, security systems, and automation solutions tailored to modern needs.
-      </p>
-      </section>
+  {/* CONTENT */}
+  <div className="relative z-10 max-w-3xl mx-auto px-6">
+    <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
+      About <span className="text-[#FFA500]">Sentra Cord</span>
+    </h1>
 
+    <p className="text-gray-300 leading-relaxed">
+      We are a trusted ICT and smart technology solutions provider helping businesses,
+      institutions, and homeowners build secure, efficient, and connected environments.
+    </p>
+
+    {/* CTA BUTTONS */}
+    <div className="flex justify-center gap-4 mt-8 flex-wrap">
+      <Link
+        to="/contact"
+        className="bg-[#FFA500] text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-400"
+      >
+        Request a Quote
+      </Link>
+
+      <a
+        href="https://wa.me/254798467717"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-500"
+      >
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
       {/* ================= MAIN SECTION ================= */}
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10">
 

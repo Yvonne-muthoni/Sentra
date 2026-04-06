@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { TypeAnimation } from "react-type-animation";
 export default function Homepage() {
   return (
     <div>
@@ -16,9 +17,27 @@ export default function Homepage() {
         <div className="absolute inset-0 bg-black/70"></div>
 
         <div className="relative z-10 max-w-4xl px-6">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Smart <span className="text-accent">Technology Solutions</span>
-          </h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-2xl md:text-4xl font-bold mb-4 text-white"
+          >
+            We Provide <br />
+            <span className="text-[#FFA500]">
+              <TypeAnimation
+                sequence={[
+                  "Smart Technology Solutions", 2000,
+                  "CCTV & Surveillance Systems", 2000,
+                  "Network & ICT Infrastructure", 2000,
+                  "Smart Home Automation", 2000,
+                ]}
+                speed={50}
+                repeat={Infinity}
+                cursor={true}
+              />
+            </span>
+          </motion.h1>
 
           <p className="text-gray-300 mb-6">
             Reliable ICT services for businesses, homes, and institutions in Kenya.
