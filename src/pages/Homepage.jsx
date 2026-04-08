@@ -123,65 +123,71 @@ export default function Homepage() {
 
 
       {/* ================= SERVICES ================= */}
-      <section className="py-20 bg-gray-200 text-[#008000]">
+      <section className="py-20 bg-gray-200 text-blue-700">
         <div className="max-w-6xl mx-auto px-6 text-center">
 
           <h2 className="text-3xl font-bold mb-2">
             Our <span className="text-accent">Services</span>
           </h2>
 
-          <p className="text-gray-400 mb-10">
+          <p className="text-black mb-10">
             Explore our ICT and smart technology solutions
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
 
             {/* CARD */}
-            <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
+            <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition flex flex-col">
               <img src="/images/Cameras/Cameeras/Camera8.jpeg" className="h-120 w-full object-cover" />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Network Infrastructure and Connectivity</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Reliable networking solutions for businesses.
-                </p>
-             <Link
-            to="/services"
-           className="bg-[#FFA500] text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition inline-block"
-            >
-              Learn more
-            </Link>
-              </div>
-            </div>
-
-            <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-              <img src="/images/Biometrics/Biometric installations access Control/d (27).jpg" className="h-120 w-full object-cover" />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">  Surveillance Systems  </h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Automate and secure your home systems.
-                </p>
-                    <Link
-            to="/services"
-           className="bg-[#FFA500] text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition inline-block"
-            >
-              Learn more
-            </Link>
-              </div>
-            </div>
-
-            <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-              <img src="/images/Cameras/Cameeras/Camera2.jpeg" className="h-120 w-full object-cover" />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">CCTV Monitoring System</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Advanced surveillance systems for safety.
-                </p>
+              <div className="p-6 flex flex-col justify-between flex-1">
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Network Infrastructure and Connectivity</h3>
+                  <p className="text-white text-sm mb-4">
+                    Reliable networking solutions for businesses.
+                  </p>
+                </div>
                 <Link
-            to="/services"
-           className="bg-[#FFA500] text-white px-4 py-3 rounded-full font-semibold hover:opacity-90 transition inline-block"
-            >
-              Learn more
-            </Link>
+                  to="/services"
+                  className="bg-[#FFA500] text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition inline-block"
+                >
+                  Learn more
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition flex flex-col">
+              <img src="/images/Biometrics/Biometric installations access Control/d (27).jpg" className="h-120 w-full object-cover" />
+              <div className="p-6 flex flex-col justify-between flex-1">
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Surveillance Systems</h3>
+                  <p className="text-white text-sm mb-4">
+                    Automate and secure your home systems.
+                  </p>
+                </div>
+                <Link
+                  to="/services"
+                  className="bg-[#FFA500] text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition inline-block"
+                >
+                  Learn more
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition flex flex-col">
+              <img src="/images/Cameras/Cameeras/Camera2.jpeg" className="h-120 w-full object-cover" />
+              <div className="p-6 flex flex-col justify-between flex-1">
+                <div>
+                  <h3 className="text-xl font-bold mb-2">CCTV Monitoring System</h3>
+                  <p className="text-white text-sm mb-4">
+                    Advanced surveillance systems for safety.
+                  </p>
+                </div>
+                <Link
+                  to="/services"
+                  className="bg-[#FFA500] text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition inline-block"
+                >
+                  Learn more
+                </Link>
               </div>
             </div>
 
@@ -207,21 +213,21 @@ export default function Homepage() {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
               <img src="/images/Structured Network/Structured Network cabling/WhatsApp Image 2026-03-13 at 12.53.36 (1).jpeg" className="h-48 w-full object-cover" />
               <div className="p-4">
-                <h3 className="font-bold"> Network Cabinet Installation  </h3>
+                <h3 className="font-bold text-blue-700"> Network Cabinet Installation  </h3>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
               <img src="/images/Biometrics/Biometric installations access Control/d (11).jpg" className="h-48 w-full object-cover" />
               <div className="p-4">
-                <h3 className="font-bold"> Biometric System Installation </h3>
+                <h3 className="font-bold text-[#FFA500]"> Biometric System Installation </h3>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
               <img src="/images/Camera Mounting/Camera Mounting Hikv/d (1).jpg" className="h-48 w-full object-cover" />
               <div className="p-4">
-                <h3 className="font-bold">CCTV Installation</h3>
+                <h3 className="font-bold text-[#008000]">CCTV Installation</h3>
               </div>
             </div>
 

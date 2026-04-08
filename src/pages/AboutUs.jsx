@@ -48,7 +48,7 @@ export default function AboutUs() {
 
         {/* LEFT SIDE */}
         <div>
-          <h2 className="text-2xl font-bold text-green-700 mb-4">
+          <h2 className="text-2xl font-bold text-[#008000] mb-4">
             Our Story
           </h2>
 
@@ -106,7 +106,7 @@ export default function AboutUs() {
 
         {/* MISSION */}
         <div className="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
-          <h3 className="text-xl font-bold text-green-700 mb-3">
+          <h3 className="text-xl font-bold text-[#008000] mb-3">
             Mission
           </h3>
           <p className="text-gray-600">
@@ -117,7 +117,7 @@ export default function AboutUs() {
 
         {/* VISION */}
         <div className="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
-          <h3 className="text-xl font-bold text-blue-600 mb-3">
+          <h3 className="text-xl font-bold text-blue-700 mb-3">
             Vision
           </h3>
           <p className="text-gray-600">
@@ -128,14 +128,14 @@ export default function AboutUs() {
 
         {/* CORE VALUES */}
         <div className="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
-          <h3 className="text-xl font-bold text-green-700 mb-4">
+          <h3 className="text-xl font-bold text-[#FFA500] mb-4">
             Our Core Values
           </h3>
 
           <ul className="space-y-4 text-gray-600">
 
             <li className="flex items-start gap-3">
-              <span className="text-green-600 text-xl">🛡️</span>
+              <span className="text-[#008000] text-xl">🛡️</span>
               <div>
                 <b>Integrity</b> – We operate with honesty and accountability.
               </div>
@@ -149,14 +149,14 @@ export default function AboutUs() {
             </li>
 
             <li className="flex items-start gap-3">
-              <span className="text-blue-500 text-xl">💡</span>
+              <span className="text-blue-700 text-xl">💡</span>
               <div>
                 <b>Innovation</b> – We leverage modern technology.
               </div>
             </li>
 
             <li className="flex items-start gap-3">
-              <span className="text-green-500 text-xl">🤝</span>
+              <span className="text-[#008000] text-xl">🤝</span>
               <div>
                 <b>Customer Commitment</b> – We prioritize client satisfaction.
               </div>
@@ -173,7 +173,7 @@ export default function AboutUs() {
 
           {/* TEXT */}
           <div>
-            <h2 className="text-3xl font-bold mb-6">
+            <h2 className="text-3xl font-bold mb-6 ">
               Why Clients Trust <span className="text-[#FFA500]">Sentra Cord</span>
             </h2>
 

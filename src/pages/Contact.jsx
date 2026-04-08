@@ -84,7 +84,7 @@ export default function Contact() {
       {/* FORM */}
       <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
 
-        <form id="contact-form" onSubmit={handleSubmit} className="bg-white text-blue-500 p-8 rounded-2xl shadow-xl">
+        <form id="contact-form" onSubmit={handleSubmit} className="bg-white text-blue-700 p-8 rounded-2xl shadow-xl">
           <h2 className="text-2xl font-bold mb-4">Send Us a Message</h2>
 
           <div className="grid grid-cols-2 gap-4 mb-4">
