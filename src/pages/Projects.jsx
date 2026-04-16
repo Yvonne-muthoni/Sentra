@@ -3,7 +3,7 @@ import { projects } from "../data/projects";
 
 export default function Projects() {
   return (
-    <div className="bg-gray-50 text-black">
+    <div className="bg-linear-to-r from-black via-gray-900 to-black text-black">
 
       {/* ================= HERO ================= */}
       <section className="relative h-[55vh] flex items-center justify-center text-center px-6 -mt-20 pb-10">

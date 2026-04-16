@@ -44,7 +44,7 @@ export default function AboutUs() {
   </div>
 </section>
       {/* ================= MAIN SECTION ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10">
+      <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10 ">
 
         {/* LEFT SIDE */}
         <div>
@@ -75,7 +75,7 @@ export default function AboutUs() {
         </div>
 
         {/* RIGHT SIDE IMAGE */}
-        <div className="relative rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative rounded-2xl overflow-hidden shadow-lg h-100">
           <img
             src="/images/Network Cabinet/Network cabinet cabling and Labellind/d (10).jpg"
             alt="Technology"
@@ -168,7 +168,7 @@ export default function AboutUs() {
       </section>
 
       {/* ================= WHY TRUST US ================= */}
-      <section className="bg-black text-white py-16 px-6">
+      <section className="bg-linear-to-r from-black via-gray-900 to-black text-white py-16 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
           {/* TEXT */}
@@ -196,31 +196,33 @@ export default function AboutUs() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="bg-black text-center py-16 px-6">
-        <h2 className="text-2xl text-white font-bold mb-4">
-          Ready to Upgrade Your <span className="text-[#FFA500]">ICT Systems?</span>
-        </h2>
+      <section className="bg-linear-to-r from-black via-gray-900 to-black text-white text-center py-16 px-6 mt-12">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8">
+            Ready to Upgrade Your <span className="text-[#FFA500]">ICT Systems?</span>
+          </h2>
 
-        <p className="text-gray-400 mb-6">
-          Let Sentra Cord help you build a secure, connected environment.
-        </p>
+          <p className="text-white mb-8 text-lg">
+            Let Sentra Cord help you build a secure, connected environment.
+          </p>
 
-        <div className="flex justify-center gap-4 flex-wrap">
-          <Link
-            to="/contact"
-            className="bg-[#FFA500] text-black px-6 py-3 rounded-full font-semibold"
-          >
-            Contact Us
-          </Link>
+          <div className="flex justify-center gap-4 flex-wrap">
+            <Link
+              to="/contact"
+              className="bg-black text-yellow-400 px-8 py-3 rounded-full font-semibold hover:scale-105 transition"
+            >
+              Contact Us
+            </Link>
 
-          <a
-            href="https://wa.me/254798467717"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-600 text-white px-6 py-3 rounded-full font-semibold"
-          >
-            Call / WhatsApp Now
-          </a>
+            <a
+              href="https://wa.me/254798467717"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#008000] text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition"
+            >
+              Call / WhatsApp Now
+            </a>
+          </div>
         </div>
       </section>
 
