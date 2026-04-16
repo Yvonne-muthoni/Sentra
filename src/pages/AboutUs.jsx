@@ -6,7 +6,7 @@ export default function AboutUs() {
     <div className="bg-gray-100">
 {/* ================= HERO SECTION ================= */}
 <section
-  className="relative py-32 text-center bg-cover bg-center"
+  className="relative py-30 text-center bg-cover bg-center"
   style={{ backgroundImage: "url('/images/Network Cabinet/Network cabinet cabling and Labellind/d (25).jpg')" }}
 >
   {/* DARK OVERLAY */}

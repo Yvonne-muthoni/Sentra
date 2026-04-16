@@ -20,9 +20,10 @@ export default function Projects() {
 
         {/* CONTENT */}
         <div className="relative z-10 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-1">
-            <span className="text-[#FFA500]">Our Recent Projects</span>
-          </h1>
+         <h1 className="text-4xl md:text-5xl font-bold mb-1">
+         <span className="text-white">Our Recent</span>{" "}
+         <span className="text-[#FFA500]">Projects</span>
+             </h1>
 
           <p className="text-gray-300 mb-6">
             A selection of our recent ICT and smart technology installations showcasing our commitment to quality, reliability, and practical solutions.
