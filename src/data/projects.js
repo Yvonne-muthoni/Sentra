@@ -51,34 +51,13 @@ export const projects = [
     ],
   },
 
-  {
-    title: "CCTV Monitoring System Setup in Nairobi",
-    images: [
-        "/images/Cameras/Cameeras/Camera8.jpeg",
-"/images/Cameras/Cameeras/Camera7.jpeg",
-"/images/Cameras/Cameeras/Camera6.jpeg",
-"/images/Cameras/Cameeras/Camera5.jpeg",
-"/images/Cameras/Cameeras/Camera4.jpeg",
-"/images/Cameras/Cameeras/Camera3.jpeg",
-"/images/Cameras/Cameeras/Camera2.jpeg",
-"/images/Cameras/Cameeras/Camera1.jpeg"
-    ],
-    shortDesc:
-      "Configured centralized CCTV monitoring systems with live feeds and recording capabilities.",
-    fullDesc:
-      "The system allows continuous surveillance, playback, and improved security management across facilities.",
-    points: [
-      "Live camera feed configuration",
-      "Recording and playback setup",
-      "System integration",
-      "Performance testing and optimization",
-    ],
-  },
-
+ 
   {
     title: "IT Hardware Installation & Setup Services",
     images: [
-        
+        "/images/Software Hardware/Software and hardware installatiion/WhatsApp Image 2026-03-13 at 12.53.34.jpeg",
+        "/images/Software Hardware/Software and hardware installatiion/WhatsApp Image 2026-03-13 at 12.53.35 (1).jpeg",
+        "/images/Software Hardware/Software and hardware installatiion/WhatsApp Image 2026-03-13 at 12.53.35.jpeg"
     ],
     shortDesc:
       "Provided installation and configuration of IT hardware and networking equipment.",
@@ -94,7 +73,13 @@ export const projects = [
 
   {
     title: "Website Development Services in Nairobi, Kenya",
-    images: [],
+    images: [
+    "/images/Screenshot from 2026-04-17 17-12-02.png",
+    "/images/Screenshot from 2026-04-17 17-50-56.png",
+    "/images/Screenshot from 2026-04-17 17-51-21.png",
+    "/images/Screenshot from 2026-04-17 17-51-39.png",
+    "/images/Screenshot from 2026-04-17 17-12-54.png"
+    ],
     shortDesc:
       "Designed and developed responsive business websites with modern UI/UX.",
     fullDesc:
