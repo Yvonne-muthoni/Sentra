@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaChevronDown,FaFacebookF,FaInstagram,FaTiktok  } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaChevronDown } from "react-icons/fa";
 
 export default function Contact() {
   
@@ -83,7 +83,7 @@ export default function Contact() {
 
         <div className="relative z-10 px-6">
           <h1 className="text-4xl md:text-5xl font-extrabold">
-            Contact <span className="text-yellow-400">Us</span>
+            Contact <span className="text-[#FFA500]">Us</span>
           </h1>
 
           <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
@@ -99,7 +99,7 @@ export default function Contact() {
           <div className="flex justify-center gap-4 mt-8 flex-wrap">
             <a
               href="tel:+254798467717"
-              className="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+              className="bg-[#FFA500] text-black px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
             >
               📞 Call Now: +254 798 467717
             </a>
@@ -180,7 +180,7 @@ export default function Contact() {
             placeholder="Project Details"
           />
 
-          <button className="w-full bg-yellow-400 text-black py-3 rounded font-semibold hover:opacity-90">
+          <button className="w-full bg-[#FFA500] text-black py-3 rounded font-semibold hover:opacity-90">
             Send Message
           </button>
 
@@ -202,7 +202,7 @@ export default function Contact() {
             <FaPhoneAlt className="text-green-500 text-xl" />
             <div>
               <p className="text-sm text-gray-400">Phone / Call</p>
-              <p className="font-bold text-yellow-400">+254 798 467717</p>
+              <p className="font-bold text-[#FFA500]">+254 798 467717</p>
               <p className="text-xs text-gray-500">Mon - Sat, 8AM - 6PM</p>
             </div>
           </div>
@@ -211,7 +211,7 @@ export default function Contact() {
             <FaWhatsapp className="text-green-500 text-xl" />
             <div>
               <p className="text-sm text-gray-400">WhatsApp</p>
-              <p className="font-bold text-yellow-400">+254 798 467717</p>
+              <p className="font-bold text-[#FFA500]">+254 798 467717</p>
               <p className="text-xs text-gray-500">24/7 Instant Response</p>
             </div>
           </div>
@@ -220,7 +220,7 @@ export default function Contact() {
             <FaEnvelope className="text-green-500 text-xl" />
             <div>
               <p className="text-sm text-gray-400">Email</p>
-              <p className="font-bold text-yellow-400">info@sentracord.co.ke</p>
+              <p className="font-bold text-[#FFA500]">info@sentracord.co.ke</p>
               <p className="text-xs text-gray-500">Replies within 1 hour</p>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function Contact() {
             <FaMapMarkerAlt className="text-green-500 text-xl" />
             <div>
               <p className="text-sm text-gray-400">Location</p>
-              <p className="font-bold text-yellow-400">Nairobi, Kenya</p>
+              <p className="font-bold text-[#FFA500]">Nairobi, Kenya</p>
               <p className="text-xs text-gray-500">Serving all counties</p>
             </div>
           </div>
@@ -241,7 +241,7 @@ export default function Contact() {
               Monday - Friday: <span className="text-green-400">8:00 AM - 6:00 PM</span>
             </p>
             <p className="text-sm text-gray-400">
-              Saturday: <span className="text-yellow-400">9:00 AM - 2:00 PM</span>
+              Saturday: <span className="text-[#FFA500]">9:00 AM - 2:00 PM</span>
             </p>
             <p className="text-sm text-gray-400">
               Sunday: <span className="text-red-400">By Appointment</span>
@@ -266,7 +266,7 @@ export default function Contact() {
       ></iframe>
 
       <div className="p-5">
-        <p className="font-bold text-yellow-400">Head Office - Nairobi</p>
+        <p className="font-bold text-[#FFA500]">Head Office - Nairobi</p>
         <p className="text-gray-400 text-sm">
           123 ICT Street, Westlands, Nairobi, Kenya
         </p>
@@ -281,7 +281,7 @@ export default function Contact() {
     <div className="space-y-4">
 
       <div className="bg-gray-900 p-5 rounded-xl shadow-md">
-        <h4 className="font-semibold text-yellow-400 mb-2">
+        <h4 className="font-semibold text-[#FFA500] mb-2">
           How fast do you respond?
         </h4>
         <p className="text-gray-400 text-sm">
@@ -290,7 +290,7 @@ export default function Contact() {
       </div>
 
       <div className="bg-gray-900 p-5 rounded-xl shadow-md">
-        <h4 className="font-semibold text-yellow-400 mb-2">
+        <h4 className="font-semibold text-[#FFA500] mb-2">
           Do you offer free quotes?
         </h4>
         <p className="text-gray-400 text-sm">
@@ -299,7 +299,7 @@ export default function Contact() {
       </div>
 
       <div className="bg-gray-900 p-5 rounded-xl shadow-md">
-        <h4 className="font-semibold text-yellow-400 mb-2">
+        <h4 className="font-semibold text-[#FFA500] mb-2">
           Which areas do you serve?
         </h4>
         <p className="text-gray-400 text-sm">
@@ -308,7 +308,7 @@ export default function Contact() {
       </div>
 
       <div className="bg-gray-900 p-5 rounded-xl shadow-md">
-        <h4 className="font-semibold text-yellow-400 mb-2">
+        <h4 className="font-semibold text-[#FFA500] mb-2">
           What services do you offer?
         </h4>
         <p className="text-gray-400 text-sm">
@@ -322,7 +322,7 @@ export default function Contact() {
 </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-20 text-center bg-yellow-400 text-black">
+      <section className="py-20 text-center bg-[#FFA500] text-black">
         <h2 className="text-3xl font-bold mb-4">
           Ready to Start <span className="text-black">Your Project?</span>
         </h2>
@@ -334,7 +334,7 @@ export default function Contact() {
         <div className="flex justify-center gap-4 flex-wrap">
           <a 
             href="/contact"
-            className="bg-black text-yellow-400 px-8 py-3 rounded-full font-semibold hover:scale-105 transition"
+            className="bg-black text-[#FFA500] px-8 py-3 rounded-full font-semibold hover:scale-105 transition"
           >
             Request Free Quote
           </a>
@@ -355,106 +355,6 @@ export default function Contact() {
           <span>✔ Quick Response</span>
         </div>
       </section>
-
-      {/* ================= FOOTER ================= */}
-      <footer className="bg-black text-gray-300 py-16 px-6 border-t border-gray-800">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 mb-10">
-          
-          {/* COMPANY INFO */}
-          <div>
-            <h3 className="text-white font-bold text-lg mb-4">🏢 Sentra Cord</h3>
-            <p className="text-sm text-gray-400 mb-4">
-              Your trusted ICT & smart technology solutions provider across Kenya.
-            </p>
-            <div className="flex gap-4 text-xl">
-
-  <a
-    href="https://facebook.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-500 hover:text-blue-400 hover:scale-110 transition"
-  >
-    <FaFacebookF />
-  </a>
-
-  <a
-    href="https://instagram.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-pink-500 hover:text-pink-400 hover:scale-110 transition"
-  >
-    <FaInstagram />
-  </a>
-
-  <a
-    href="https://wa.me/254798467717"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-green-500 hover:text-green-400 hover:scale-110 transition"
-  >
-    <FaWhatsapp />
-  </a>
-
-  <a
-    href="https://tiktok.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-white hover:text-gray-300 hover:scale-110 transition"
-  >
-    <FaTiktok />
-  </a>
-
-</div>
-          </div>
-
-          {/* SERVICES */}
-          <div>
-            <h3 className="text-white font-bold text-lg mb-4">Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-yellow-400">CCTV Installation</a></li>
-              <li><a href="#" className="hover:text-yellow-400">Network Infrastructure</a></li>
-              <li><a href="#" className="hover:text-yellow-400">Smart Home Solutions</a></li>
-              <li><a href="#" className="hover:text-yellow-400">Access Control Systems</a></li>
-              <li><a href="#" className="hover:text-yellow-400">Intercom Installation</a></li>
-            </ul>
-          </div>
-
-          {/* COVERAGE */}
-          <div>
-            <h3 className="text-white font-bold text-lg mb-4">Coverage</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-yellow-400">Nairobi</a></li>
-              <li><a href="#" className="hover:text-yellow-400">Mombasa</a></li>
-              <li><a href="#" className="hover:text-yellow-400">Kisumu</a></li>
-              <li><a href="#" className="hover:text-yellow-400">All Kenya Counties</a></li>
-            </ul>
-          </div>
-
-          {/* QUICK LINKS */}
-          <div>
-            <h3 className="text-white font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="/" className="hover:text-yellow-400">Home</a></li>
-              <li><a href="/about" className="hover:text-yellow-400">About Us</a></li>
-              <li><a href="/services" className="hover:text-yellow-400">Services</a></li>
-              <li><a href="/contact" className="hover:text-yellow-400">Contact Us</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        {/* FOOTER BOTTOM */}
-        <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-            <p>© 2025 Sentra Cord. All Rights Reserved.|Powering Kenya with Smart Technology Solutions  .</p>
-            <div className="flex gap-4 mt-4 md:mt-0">
-              <span>🔒 Licensed</span>
-              <span>✓ Insured</span>
-              <span>⭐ Trusted</span>
-            </div>
-          </div>
-        </div>
-      </footer>
 
     </div>
   );

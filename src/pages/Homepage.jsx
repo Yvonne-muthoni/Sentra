@@ -76,17 +76,17 @@ export default function Homepage() {
     <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-300">
       <div className="flex items-center gap-2">
         <span className="text-green-400">✔</span>
-        <span><span className="text-yellow-400 font-bold">20+</span> Years Experience</span>
+        <span><span className="text-[#FFA500] font-bold">20+</span> Years Experience</span>
       </div>
 
       <div className="flex items-center gap-2">
         <span className="text-green-400">✔</span>
-        <span><span className="text-yellow-400 font-bold">500+</span> Projects Completed</span>
+        <span><span className="text-[#FFA500] font-bold">500+</span> Projects Completed</span>
       </div>
 
       <div className="flex items-center gap-2">
         <span className="text-green-400">✔</span>
-        <span><span className="text-yellow-400 font-bold">100%</span> Client Satisfaction</span>
+        <span><span className="text-[#FFA500]  font-bold">100%</span> Client Satisfaction</span>
       </div>
     </div>
 
@@ -145,7 +145,7 @@ export default function Homepage() {
   <div className="max-w-6xl mx-auto px-6 text-center">
 
     <h2 className="text-3xl font-bold mb-2">
-      Our <span className="text-yellow-400">Services</span>
+      Our <span className="text-[#FFA500]">Services</span>
     </h2>
 
     <p className="text-gray-400 mb-12">
@@ -164,7 +164,7 @@ export default function Homepage() {
         <div className="absolute inset-0 bg-black/50 group-hover:bg-black/50 transition"></div>
 
         <div className="relative p-6 flex flex-col justify-end h-80 text-left">
-          <div className="text-yellow-400 mb-2">★★★★★</div>
+          <div className="text-[#FFA500] mb-2">★★★★★</div>
 
           <h3 className="text-l font-semibold mb-2">
             Network Infrastructure and Connectivity
@@ -177,7 +177,7 @@ export default function Homepage() {
 
           <Link
             to="/services"
-            className="bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold w-fit hover:scale-105 transition"
+            className="bg-[#FFA500] text-black px-5 py-2 rounded-full font-semibold w-fit hover:scale-105 transition"
           >
             Learn More →
           </Link>
@@ -194,7 +194,7 @@ export default function Homepage() {
         <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition"></div>
 
         <div className="relative p-6 flex flex-col justify-end h-80 text-left">
-          <div className="text-yellow-400 mb-2">★★★★★</div>
+          <div className="text-[#FFA500] mb-2">★★★★★</div>
 
           <h3 className="text-l font-semibold mb-2">
             Access Control Systems
@@ -207,7 +207,7 @@ export default function Homepage() {
 
           <Link
             to="/services"
-            className="bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold w-fit hover:scale-105 transition"
+            className="bg-[#FFA500] text-black px-5 py-2 rounded-full font-semibold w-fit hover:scale-105 transition"
           >
             Learn More →
           </Link>
@@ -224,7 +224,7 @@ export default function Homepage() {
         <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition"></div>
 
         <div className="relative p-6 flex flex-col justify-end h-80 text-left">
-          <div className="text-yellow-400 mb-2">★★★★★</div>
+          <div className="text-[#FFA500] mb-2">★★★★★</div>
 
           <h3 className="text-l font-semibold mb-2">
             CCTV Monitoring System
@@ -237,7 +237,7 @@ export default function Homepage() {
 
           <Link
             to="/services"
-            className="bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold w-fit hover:scale-105 transition"
+            className="bg-[#FFA500] text-black px-5 py-2 rounded-full font-semibold w-fit hover:scale-105 transition"
           >
             Learn More →
           </Link>
@@ -289,7 +289,7 @@ export default function Homepage() {
       </section>
 
       {/* ================= CTA SECTION ================= */}
-      <section className="py-20 bg-linear-to-r from-black via-gray-900 to-black text-white">
+      <section className="py-4 bg-linear-to-r from-black via-gray-900 to-black text-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h3 className="text-3xl font-bold mb-4">
          Ready to <span className="text-[#FFA500]">Transform</span> Your Business?

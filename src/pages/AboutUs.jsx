@@ -196,7 +196,7 @@ export default function AboutUs() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="bg-linear-to-r from-black via-gray-900 to-black text-white text-center py-16 px-6 mt-12">
+      <section className="bg-linear-to-r from-black via-gray-900 to-black text-white text-center py-8 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">
             Ready to Upgrade Your <span className="text-[#FFA500]">ICT Systems?</span>
