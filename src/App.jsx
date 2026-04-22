@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Layout from "./components/Layout";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
@@ -13,6 +14,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <FloatingWhatsApp />
       <Layout>
         <Routes>
           <Route path="/" element={<Homepage />} />

@@ -6,7 +6,7 @@ export default function AboutUs() {
     <div className="bg-gray-100">
 {/* ================= HERO SECTION ================= */}
 <section
-  className="relative py-30 text-center bg-cover bg-center"
+  className="relative py-22 text-center bg-cover bg-center"
   style={{ backgroundImage: "url('/images/Network Cabinet/Network cabinet cabling and Labellind/d (25).jpg')" }}
 >
   {/* DARK OVERLAY */}
@@ -14,7 +14,7 @@ export default function AboutUs() {
 
   {/* CONTENT */}
   <div className="relative z-10 max-w-3xl mx-auto px-6">
-    <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
       About <span className="text-[#FFA500]">Sentra Cord</span>
     </h1>
 
@@ -196,7 +196,7 @@ export default function AboutUs() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="bg-linear-to-r from-black via-gray-900 to-black text-white text-center py-8 px-6">
+      <section className="bg-linear-to-r from-black via-gray-900 to-black text-white text-center py-4 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">
             Ready to Upgrade Your <span className="text-[#FFA500]">ICT Systems?</span>

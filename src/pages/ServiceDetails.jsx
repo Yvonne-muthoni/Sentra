@@ -21,16 +21,17 @@ export default function ServiceDetails() {
   return (
     <div className="bg-gray-900 text-white">
       
-      {/* ================= HERO SECTION ================= */}
-      <section 
-        className="pt-28 pb-20 text-center px-4 bg-linear-to-r from-black via-gray-900 to-black relative"
-      >
+     
+     {/* ================= HERO SECTION ================= */}
+     <section 
+      className="pt-16 pb-20 text-center px-6 bg-linear-to-r from-black via-gray-900 to-black relative"
+       >
         <div className="max-w-3xl mx-auto">
           <div className="bg-black/40 w-20 h-20 flex items-center justify-center rounded-full mb-6 mx-auto">
             <i className={`${service.icon} text-[#FFA500] text-5xl`}></i>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
             {service.title}
           </h1>
           

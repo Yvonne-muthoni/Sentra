@@ -15,7 +15,7 @@ export default function Services() {
         <div className="absolute inset-0 bg-black/70"></div>
 
         <div className="relative z-10 max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-3xl font-bold mb-4">
             Our ICT & Smart <span className="text-[#FFA500]">Technology Services</span>
           </h1>
 
@@ -97,7 +97,7 @@ export default function Services() {
       </section>
 
       {/* ================= WHY CHOOSE US ================= */}
-      <section className="text-center py-16 px-6 bg-linear-to-r from-black via-gray-900 to-black">
+      <section className="text-center py-4 px-6 bg-linear-to-r from-black via-gray-900 to-black">
         <h2 className="text-3xl font-bold mb-4">
           Why Choose <span className="text-[#FFA500]">Sentra Cord?</span>
         </h2>

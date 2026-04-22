@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa";
 
 export default function CustomFooter() {
   return (
-    <footer className="bg-black text-gray-300 py-4 px-6 border-t border-gray-800">
+    <footer className="bg-black text-gray-300 py-2 px-6 border-t border-gray-800">
       <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 mb-10">
         
         {/* COMPANY INFO */}

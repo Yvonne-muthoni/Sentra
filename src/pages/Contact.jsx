@@ -72,7 +72,7 @@ export default function Contact() {
 
       {/* ================= HERO ================= */}
       <section
-        className="relative py-28 text-center bg-cover bg-center"
+        className="relative pt-28 pb-20 text-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('/images/Structured Network/Structured Network cabling/WhatsApp Image 2026-03-13 at 12.53.42.jpeg')",
@@ -82,7 +82,7 @@ export default function Contact() {
         <div className="absolute inset-0 bg-linear-to-r from-yellow-500/10 via-transparent to-green-500/10"></div>
 
         <div className="relative z-10 px-6">
-          <h1 className="text-4xl md:text-5xl font-extrabold">
+          <h1 className="text-3xl md:text-4xl font-extrabold">
             Contact <span className="text-[#FFA500]">Us</span>
           </h1>
 
@@ -322,7 +322,7 @@ export default function Contact() {
 </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-20 text-center bg-[#FFA500] text-black">
+      <section className="py-4 text-center bg-[#FFA500] text-black">
         <h2 className="text-3xl font-bold mb-4">
           Ready to Start <span className="text-black">Your Project?</span>
         </h2>

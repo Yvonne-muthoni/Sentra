@@ -5,7 +5,7 @@ export default function Homepage() {
   return (
     <div>
 {/* ================= HERO SECTION ================= */}
-      <section className="relative h-200 flex items-center justify-center text-center text-[#FFA500]">
+      <section className="relative h-110 flex items-center justify-center text-center text-[#FFA500]">
 
   <img
     src="/images/Gallery5.jpg"
@@ -141,7 +141,7 @@ export default function Homepage() {
 
 
     {/* ================= SERVICES ================= */}
-<section className="py-20 bg-linear-to-r from-black via-gray-900 to-black text-white">
+<section className="py-4 bg-linear-to-r from-black via-gray-900 to-black text-white">
   <div className="max-w-6xl mx-auto px-6 text-center">
 
     <h2 className="text-3xl font-bold mb-2">
@@ -249,7 +249,7 @@ export default function Homepage() {
 </section>
 
       {/* ================= PROJECTS ================= */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-8 bg-blue-50">
         <div className="max-w-6xl mx-auto px-6 text-center">
 
           <h2 className="text-3xl font-bold mb-2 text-primary text-[#FFA500]">
@@ -289,7 +289,7 @@ export default function Homepage() {
       </section>
 
       {/* ================= CTA SECTION ================= */}
-      <section className="py-4 bg-linear-to-r from-black via-gray-900 to-black text-white">
+      <section className="py-2 bg-linear-to-r from-black via-gray-900 to-black text-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h3 className="text-3xl font-bold mb-4">
          Ready to <span className="text-[#FFA500]">Transform</span> Your Business?

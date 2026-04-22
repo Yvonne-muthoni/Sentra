@@ -6,7 +6,7 @@ export default function Projects() {
     <div className="bg-linear-to-r from-black via-gray-900 to-black text-black">
 
       {/* ================= HERO ================= */}
-      <section className="relative h-[55vh] flex items-center justify-center text-center px-6 -mt-20 pb-10">
+      <section className="relative pt-28 pb-20 flex items-center justify-center text-center px-2">
 
         {/* BACKGROUND IMAGE */}
         <img
@@ -20,7 +20,7 @@ export default function Projects() {
 
         {/* CONTENT */}
         <div className="relative z-10 max-w-3xl">
-         <h1 className="text-4xl md:text-5xl font-bold mb-1">
+         <h1 className="text-3xl md:text-4xl font-bold mb-1">
          <span className="text-white">Our Recent</span>{" "}
          <span className="text-[#FFA500]">Projects</span>
              </h1>
