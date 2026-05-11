@@ -6,7 +6,7 @@ export default function Projects() {
     <div className="bg-linear-to-r from-black via-gray-900 to-black text-black">
 
       {/* ================= HERO ================= */}
-      <section className="relative pt-28 pb-20 flex items-center justify-center text-center px-2">
+      <section className="relative pt-28 pb-20 flex items-center justify-center text-center px-4 md:px-2">
 
         {/* BACKGROUND IMAGE */}
         <img
@@ -20,26 +20,26 @@ export default function Projects() {
 
         {/* CONTENT */}
         <div className="relative z-10 max-w-3xl">
-         <h1 className="text-3xl md:text-4xl font-bold mb-1">
+         <h1 className="text-2xl md:text-4xl font-bold mb-1">
          <span className="text-white">Our Recent</span>{" "}
          <span className="text-[#FFA500]">Projects</span>
              </h1>
 
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-300 mb-6 text-sm md:text-base">
             A selection of our recent ICT and smart technology installations showcasing our commitment to quality, reliability, and practical solutions.
           </p>
 
-          <div className="flex justify-center gap-4 flex-wrap">
+          <div className="flex justify-center gap-2 md:gap-4 flex-wrap">
             <Link
               to="/contact"
-              className="bg-[#FFA500] text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition"
+              className="bg-[#FFA500] text-black px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold hover:scale-105 transition"
             >
               Request a Project
             </Link>
 
             <a
               href="https://wa.me/254798467717"
-              className="bg-green-600 px-6 py-3 rounded-full font-semibold"
+              className="bg-green-600 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold"
             >
               Talk on WhatsApp
             </a>
@@ -49,7 +49,7 @@ export default function Projects() {
       </section>
 
       {/* ================= PROJECT GRID ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10">
+      <section className="max-w-6xl mx-auto px-4 md:px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
 
         {projects.map((project, index) => (
           <div
@@ -93,27 +93,27 @@ export default function Projects() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="text-center py-16 px-6 bg-gray-300">
-        <h2 className="text-2xl font-bold mb-4 text-[#008000]">
+      <section className="text-center py-12 md:py-16 px-4 md:px-6 bg-gray-300">
+        <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#008000]">
           Looking to Secure and{" "}
           <span className="text-blue-700">Automate Your Space?</span>
         </h2>
 
-        <p className="text-black mb-6">
+        <p className="text-black mb-6 text-sm md:text-base">
           Contact Sentra Cord for reliable ICT and smart technology solutions in Kenya.
         </p>
 
-        <div className="flex justify-center gap-4 flex-wrap">
+        <div className="flex justify-center gap-2 md:gap-4 flex-wrap">
           <Link
             to="/contact"
-            className="bg-[#FFA500] text-black px-6 py-3 rounded-full font-semibold"
+            className="bg-[#FFA500] text-black px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold"
           >
             Contact Us
           </Link>
 
           <a
             href="https://wa.me/254798467717"
-            className="bg-green-600 px-6 py-3 rounded-full font-semibold"
+            className="bg-green-600 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold"
           >
             Call / WhatsApp Now
           </a>

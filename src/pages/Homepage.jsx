@@ -5,7 +5,7 @@ export default function Homepage() {
   return (
     <div>
 {/* ================= HERO SECTION ================= */}
-      <section className="relative h-110 flex items-center justify-center text-center text-[#FFA500]">
+      <section className="relative h-110 md:h-110 flex items-center justify-center text-center text-[#FFA500] pt-16 md:pt-0">
 
   <img
     src="/images/Gallery5.jpg"
@@ -15,7 +15,7 @@ export default function Homepage() {
 
   <div className="absolute inset-0 bg-black/70"></div>
 
-  <div className="relative z-10 max-w-4xl px-6">
+  <div className="relative z-10 max-w-4xl px-4 md:px-6">
     
     {/* HEADING */}
     <motion.h1
@@ -41,12 +41,12 @@ export default function Homepage() {
     </motion.h1>
 
     {/* DESCRIPTION */}
-    <p className="text-gray-300 mb-6">
+    <p className="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">
       Reliable ICT services for businesses, homes, and institutions in Kenya.
     </p>
 
     {/* SERVICES TAGS */}
-    <div className="flex flex-wrap justify-center gap-6 mb-6 text-sm text-gray-300">
+    <div className="flex flex-wrap justify-center gap-2 md:gap-6 mb-4 md:mb-6 text-xs md:text-sm text-gray-300">
       <span>✔ CCTV Installation</span>
       <span>✔ Network Installation</span>
       <span>✔ Smart Home</span>
@@ -54,10 +54,10 @@ export default function Homepage() {
     </div>
 
     {/* BUTTONS */}
-    <div className="flex flex-wrap justify-center gap-4 mb-8">
+    <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8">
       <Link
         to="/contact"
-        className="bg-[#FFA500] text-black px-6 py-3 rounded-full font-semibold hover:opacity-90 transition inline-block"
+        className="bg-[#FFA500] text-black px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold hover:opacity-90 transition inline-block"
       >
         Request a Free Quote
       </Link>
@@ -66,14 +66,14 @@ export default function Homepage() {
         href="https://wa.me/254798467717"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-[#008000] text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition"
+        className="bg-[#008000] text-white px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold hover:opacity-90 transition"
       >
         Chat on WhatsApp
       </a>
     </div>
 
     {/* TRUST STATS */}
-    <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-300">
+    <div className="flex flex-wrap justify-center gap-3 md:gap-6 text-xs md:text-sm text-gray-300">
       <div className="flex items-center gap-2">
         <span className="text-green-400">✔</span>
         <span><span className="text-[#FFA500] font-bold">20+</span> Years Experience</span>

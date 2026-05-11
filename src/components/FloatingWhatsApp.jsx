@@ -6,7 +6,7 @@ export default function FloatingWhatsApp() {
       href="https://wa.me/254798467717"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition duration-300 flex items-center justify-center"
+      className="fixed bottom-4 right-4 md:bottom-5 md:right-5 z-50 bg-green-600 text-white p-2.5 md:p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition duration-300 flex items-center justify-center"
       title="Chat on WhatsApp"
     >
       <FaWhatsapp size={28} />

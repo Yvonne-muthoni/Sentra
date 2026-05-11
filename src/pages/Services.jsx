@@ -7,7 +7,7 @@ export default function Services() {
 
       {/* ================= HERO ================= */}
       <section
-        className="pt-28 pb-20 text-center px-6 bg-cover bg-center relative"
+        className="pt-28 pb-20 text-center px-4 md:px-6 bg-cover bg-center relative"
         style={{
           backgroundImage: "url('/images/Project%20Unifi/Project%20Unifi%20Network%20Installation/k%20(1).jpg')"
         }}
@@ -15,19 +15,19 @@ export default function Services() {
         <div className="absolute inset-0 bg-black/70"></div>
 
         <div className="relative z-10 max-w-3xl mx-auto">
-          <h1 className="text-3xl font-bold mb-4">
+          <h1 className="text-2xl md:text-3xl font-bold mb-4">
             Our ICT & Smart <span className="text-[#FFA500]">Technology Services</span>
           </h1>
 
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-300 mb-6 text-sm md:text-base">
             We provide reliable, secure, and scalable ICT solutions for businesses,
             homes, and institutions across Kenya.
           </p>
 
-          <div className="flex justify-center gap-4 flex-wrap">
+          <div className="flex justify-center gap-2 md:gap-4 flex-wrap">
             <Link
               to="/contact"
-              className="bg-[#FFA500] text-black px-6 py-3 rounded-full font-semibold"
+              className="bg-[#FFA500] text-black px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold"
             >
               Request a Free Quote
             </Link>
@@ -36,7 +36,7 @@ export default function Services() {
               href="https://wa.me/254798467717"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 px-6 py-3 rounded-full font-semibold"
+              className="bg-green-600 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold"
             >
               Talk to Us on WhatsApp
             </a>
@@ -45,7 +45,7 @@ export default function Services() {
       </section>
 
       {/* ================= SERVICES GRID ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8">
+      <section className="max-w-6xl mx-auto px-4 md:px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
         {servicesData.map((service, index) => (
           <div

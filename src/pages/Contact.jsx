@@ -72,7 +72,7 @@ export default function Contact() {
 
       {/* ================= HERO ================= */}
       <section
-        className="relative pt-28 pb-20 text-center bg-cover bg-center"
+        className="relative pt-28 pb-20 text-center bg-cover bg-center px-4 md:px-6"
         style={{
           backgroundImage:
             "url('/images/Structured Network/Structured Network cabling/WhatsApp Image 2026-03-13 at 12.53.42.jpeg')",
@@ -82,24 +82,24 @@ export default function Contact() {
         <div className="absolute inset-0 bg-linear-to-r from-yellow-500/10 via-transparent to-green-500/10"></div>
 
         <div className="relative z-10 px-6">
-          <h1 className="text-3xl md:text-4xl font-extrabold">
+          <h1 className="text-2xl md:text-4xl font-extrabold">
             Contact <span className="text-[#FFA500]">Us</span>
           </h1>
 
-          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-300 mt-4 max-w-2xl mx-auto text-sm md:text-base">
             We’re here to help you secure, connect, and automate your world with reliable ICT solutions.
           </p>
 
-          <div className="flex justify-center gap-6 mt-4 text-sm text-gray-300 flex-wrap">
+          <div className="flex justify-center gap-3 md:gap-6 mt-4 text-xs md:text-sm text-gray-300 flex-wrap">
             <span>✔ Fast Response</span>
             <span>✔ Free Quotes</span>
             <span>✔ Expert Support</span>
           </div>
 
-          <div className="flex justify-center gap-4 mt-8 flex-wrap">
+          <div className="flex justify-center gap-2 md:gap-4 mt-8 flex-wrap">
             <a
               href="tel:+254798467717"
-              className="bg-[#FFA500] text-black px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+              className="bg-[#FFA500] text-black px-6 md:px-8 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold shadow-lg hover:scale-105 transition"
             >
               📞 Call Now: +254 798 467717
             </a>
@@ -108,7 +108,7 @@ export default function Contact() {
               href="https://wa.me/254798467717"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+              className="bg-green-600 px-6 md:px-8 py-2 md:py-3 text-sm md:text-base rounded-full font-semibold shadow-lg hover:scale-105 transition"
             >
               💬 Chat on WhatsApp
             </a>
@@ -121,20 +121,20 @@ export default function Contact() {
       </section>
 
       {/* ================= MAIN ================= */}
-      <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
+      <section className="max-w-7xl mx-auto px-4 md:px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
 
         {/* FORM */}
         <form
           id="contact-form"
           onSubmit={handleSubmit}
-          className="bg-white text-black p-8 rounded-2xl shadow-xl"
+          className="bg-white text-black p-6 md:p-8 rounded-2xl shadow-xl"
         >
-          <h2 className="text-2xl font-bold mb-2">Send Us a Message</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-2">Send Us a Message</h2>
           <p className="text-gray-500 mb-6 text-sm">
-            Fill out the form and we’ll get back to you shortly.
+            Fill out the form and we'll get back to you shortly.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <input
               name="name"
               value={form.name}
